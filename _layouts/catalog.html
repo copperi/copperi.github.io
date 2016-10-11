@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		{% include head.html %}
+		{% seo %}
+	</head>
+	<body id="top" class="is-loading">
+		<div id="page-wrapper">
+		<!-- Header -->
+		{% include header.html %}	
+		<!-- Nav -->
+		{% include nav.html %}		
+		<!-- Banner -->
+		{% include banner-small.html %}	
+		<!-- Main -->
+			<div id="not-main">
+				<article  class="special">
+					<section id="frontpage-grid">
+						<div class="row 0%">
+						{% for product in site.catalog %}
+							{% if (product.layout == "category") %}
+							{% assign url_list = product.url | split: '/' %}
+							{% assign prod_name = url_list | last %}
+							<div class="3u 4u(large) 6u(small)">
+								<a href="{{product.url}}" class="copperi-link" style="background-image: url('/images/catalog/{{prod_name}}.jpg');">
+									<div class="wrapper">
+										<div class="inner-wrapper category">	
+											<h3>{{product.page-title}}</h3>
+											<p>Смотреть всю коллекцию</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							{% endif %}
+						{% endfor %}
+						</div>
+					</section>
+					{{ content }}
+					{% include pre-footer.html %}
+				</article>
+			</div>
+
+		<!-- Footer -->
+		{% include footer.html %}	
+		<!-- Scripts -->
+		{% include scripts.html %}	
+		</div>
+	</body>
+</html>
