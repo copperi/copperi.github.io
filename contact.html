@@ -1,7 +1,7 @@
 ---
 title: COPPERI - Contacts
 description: Contacts
-layout: generic
+layout: generic-100
 permalink: /contact
 
 page-title: Контакты
@@ -10,21 +10,18 @@ page-subtitle: Пишите, звоните, нам похуй вообще.
 banner-color: "#F4EAF9"
 ---
 <div class="align-center">
-	<header>
-		<h3>COPPERI</h3>
-	</header>
-	<ul class="alt">
-		<li><strong>Телефон:</strong> <a href="tel:+7(499)390-72-14"><span itemprop="telephone">+7 (499) 390-72-14</span></a></li>
-		<li><strong>E-mail:</strong> <a href="mailto:info@decorce.ru"><span itemprop="email">info@decorce.ru</span></a></li>
-		<li><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><strong>Адрес:</strong> <span itemprop="postalCode">117218</span> г. <span itemprop="addressLocality">Москва</span>, <span itemprop="streetAddress">ул. Кржижановского, д. 23 к. 2</span></div></li>
-		<li><strong>Часы работы:</strong><data itemprop="openingHours" value="Mo-Sun 10:00−20:00"> Ежедневно, 10:00-20:00.</data></li>
-	</ul>
-
-
+	<div class="container 75%">
+		<ul class="alt">
+			<li><i class="fa fa-phone">&nbsp;</i><a href="tel:+7(499)390-72-14"><span itemprop="telephone">+7&nbsp;(499)&nbsp;390-72-14</span></a></li>
+			<li><i class="fa fa-envelope-o">&nbsp;</i><a href="mailto:info@copperi.ru"><span itemprop="email">info@copperi.ru</span></a></li>
+			<li><div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><i class="fa fa-map-marker">&nbsp;</i><span itemprop="postalCode">142181</span> г. <span itemprop="addressLocality">Климовск</span>, <span itemprop="streetAddress">ул. Заводская, д. 2</span></div></li>
+			<li><i class="fa fa-clock-o">&nbsp;</i><data itemprop="openingHours" value="Mo-Fri 10:00−20:00"> Пн-Пт, 10:00-20:00.</data></li>
+		</ul>
+	</div>
 	<div id="map"></div>
-	<script async src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDhVVXo6YEQbJaryZPqmx8g_SqMln8x8jY&sensor=false&extension=.js'></script> 
-
+	<script async src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDhVVXo6YEQbJaryZPqmx8g_SqMln8x8jY&extension=.js&callback=initMap'></script>
 	<script> 
+	function initMap() {
 			google.maps.event.addDomListener(window, 'load', init);
 			var map;
 			function init() {
@@ -106,6 +103,7 @@ banner-color: "#F4EAF9"
 					infoWindowVisible(false);
 				});
 		 }
+		}
 		}
 		</script>
 </div>
