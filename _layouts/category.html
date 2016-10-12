@@ -18,7 +18,7 @@
 				<article  class="special">
 					<section id="frontpage-grid">
 						<div class="row 0%">
-						{% for product in site.catalog %}
+						{% for product in site.catalog | sort: 'weight' %}
 							{% if (product.layout != "category" and product.url contains page.url) %}
 							{% assign url_list = product.url | split: '/' %}
 							{% assign prod_name = url_list | last %}
