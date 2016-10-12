@@ -76,10 +76,9 @@
 					<div class="hero-block container 50%">
 						<h4>Особенности модели:</h4>
 						<ul class="alt">
-							<li>Индивидуальный дизайн</li>
-							<li>Любое полноцветное изображение</li>
-							<li>Возможно нанесение рельефного изображения</li>
-							<li>Полностью медный теплообменник</li>
+							{% for feature in page.product-features %}
+							<li>{{ feature }}</li>
+							{% endfor %}
 						</ul>
 						
 					</div>
@@ -90,19 +89,12 @@
 						</header>
 						<div class="row 0%">
 							{% for rel-product in page.related %}
-								
 								{% for product in site.catalog %}
 									{% if product.url contains rel-product %}
-										{% assign img_array = "" | split:"," %}
-										{% for file in site.static_files %}
-											{% if file.path contains product.url %}
-												{% assign img_array = img_array | push: file.path %}
-											{% endif %}
-										{% endfor %}
 										<div class="3u 4u(large) 6u(small)">
 											<a href="{{ product.url }}" class="copperi-link">
 												<div class="inner-wrapper product">	
-													<img class="image fit pop" src="{{ img_array[0] }}">
+													<img class="image fit pop" src="/images/catalog/{{product.product-model}}-small.jpg">
 													<h3>{{ product.product-name }}</h3>
 													<p>{{ product.prices[0] }}</p>
 												</div>	

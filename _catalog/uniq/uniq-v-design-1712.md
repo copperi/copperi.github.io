@@ -8,6 +8,8 @@ permalink: /catalog/:path
 product-name: Uniq V
 product-desc: Изготовленные по индивидуальному заказу дизайнерские радиаторы COPPERI Uniq с полноцветными изображениями на передней панели позволят Вам воплотить в жизнь самые смелые и оригинальные проекты интерьеров. Творите! Ваша фантазия не ограничена.
 
+product-model: uniq-v-design-1712
+
 product-connection: "нижнее"
 product-color: "любой цвет по RAL"
 

@@ -1346,6 +1346,10 @@
 
 /* Banner */
 
+	/* #banner-wrapper {
+		display: flex;
+	} */
+	
 	.banner {
 		display:-webkit-box;
 		display:-ms-flexbox;
@@ -1367,6 +1371,7 @@
 		min-height: 30vh;
 		position: relative;
 		padding: 1em 0;
+		width: 100%;
 	}
 	
 	.banner-generic {
@@ -1397,6 +1402,7 @@
 		.banner .inner{
 			margin: auto;
 			z-index: 2;
+			position: relative;
 		}
 		
 		.banner-generic .inner{
