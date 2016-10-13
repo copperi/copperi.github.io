@@ -37,8 +37,8 @@
 						<header class="product">
 							<h2>{{ page.product-name }}</h2>
 							<div class="var_attr">
-								{% for model in site.data[page.product-type] %}
-								<p class="s{{forloop.index}} hide">{{model.price}}</p>
+								{% for price in page.prices %}
+								<p class="s{{forloop.index}} hide">{{price}}</p>
 								{% endfor %}
 							</div>
 							<a href="#" class="button">Заказать</a>
@@ -49,8 +49,8 @@
 						<h5>Выберите размер</h5>
 						<div class="select-wrapper">
 							<select id="pa_size" name="attribute_pa_size" class="size_select" data-target=".var_attr">
-								{% for model in site.data[page.product-type] %}
-								<option value="{{model.size}}" {% if forloop.index==1 %}selected="selected"{% endif %} data-show=".s{{forloop.index}}">{{model.size}}</option>
+								{% for size in page.sizes %}
+								<option value="{{size}}" {% if forloop.index==1 %}selected="selected"{% endif %} data-show=".s{{forloop.index}}">{{size}}</option>
 								{% endfor %}
 							</select>
 						</div>
@@ -63,15 +63,13 @@
 					
 					<div class="hero-block container 75%">
 						<div class="row">
-							{% assign model_array = page.product-model | split: '-' %}
-							{% assign design-number = model_array | last %}
-							<ul class="attr">
-								<li class="var_attr">Артикул: {% for model in site.data[page.product-type] %}<span class="s{{forloop.index}} hide">{{model.model-no}}-{{design-number}}</span>{% endfor %}</li>
-								<li class="var_attr">Размер: {% for model in site.data[page.product-type] %}<span class="s{{forloop.index}} hide">{{model.size}}</span>{% endfor %}</li>
-								<li class="var_attr">Мощность: {% for model in site.data[page.product-type] %}<span class="s{{forloop.index}} hide">{{model.wattage}}</span>{% endfor %}</li>
-								<li>Подключение: <span>{{ page.product-connection }}</span></li>
-								<li>Цвет: <span>{{ page.product-color }}</span></li>
-							</ul>
+						<ul class="attr">
+							<li class="var_attr">Артикул: {% for article in page.articles %}<span class="s{{forloop.index}} hide">{{article}}</span>{% endfor %}</li>
+							<li class="var_attr">Размер: {% for size in page.sizes %}<span class="s{{forloop.index}} hide">{{size}}</span>{% endfor %}</li>
+							<li class="var_attr">Мощность: {% for watt in page.wattage %}<span class="s{{forloop.index}} hide">{{watt}}</span>{% endfor %}</li>
+							<li>Подключение: <span>{{ page.product-connection }}</span></li>
+							<li>Цвет: <span>{{ page.product-color }}</span></li>
+						</ul>
 						</div>
 					</div>
 					

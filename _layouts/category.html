@@ -27,7 +27,8 @@
 									<div class="inner-wrapper product">	
 										<img class="image fit pop" src="/images/catalog/{{prod_name}}-small.jpg">
 										<h3>{{product.product-name}}</h3>
-										<p>{{product.prices[0]}}</p>
+										{% assign first-model = site.data[product.product-type] | first%}
+										<p>{{ first-model.price }}</p>
 									</div>	
 								</a>
 							</div>
