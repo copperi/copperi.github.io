@@ -27,7 +27,8 @@
 							<div class="slick">
 								{% for img in img_array %}
 								<div>
-									<div class="banner b-product" style="background-image: url('{{ img }}')">
+									<div class="banner b-product">
+										<img src="{{ img }}">
 									</div>
 								</div>
 								{% endfor %}
@@ -68,7 +69,7 @@
 							<ul class="attr">
 								<li class="var_attr">Артикул: {% for model in site.data[page.product-type] %}<span class="s{{forloop.index}} hide">{{model.model-no}}-{{design-number}}</span>{% endfor %}</li>
 								<li class="var_attr">Размер: {% for model in site.data[page.product-type] %}<span class="s{{forloop.index}} hide">{{model.size}}</span>{% endfor %}</li>
-								<li class="var_attr">Мощность: {% for model in site.data[page.product-type] %}<span class="s{{forloop.index}} hide">{{model.wattage}}</span>{% endfor %}</li>
+								<li class="var_attr">Мощность: {% for model in site.data[page.product-type] %}<span class="s{{forloop.index}} hide">{{model.wattage}} Вт</span>{% endfor %}</li>
 								<li>Подключение: <span>{{ page.product-connection }}</span></li>
 								<li>Цвет: <span>{{ page.product-color }}</span></li>
 							</ul>
