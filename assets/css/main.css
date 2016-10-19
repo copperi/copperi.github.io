@@ -1370,6 +1370,7 @@
 	
 	.small-banner {
 		min-height: 30vh;
+		height: 30vh;
 		position: relative;
 		padding: 1em 0;
 		width: 100%;
@@ -1379,6 +1380,7 @@
 		color: rgba(43,43,43,0.5);
 		margin-bottom: 2em;
 		min-height: 20vh;
+		height: 20vh;
 	}
 		
 	.b-product {
@@ -1599,7 +1601,7 @@
 			left: 0;
 			height: 100%;
 			width: 100%;
-			background: rgba(0,0,0,0.7);
+			background: rgba(0,0,0,0.8);
 			opacity: 0;
 			-webkit-transition: opacity 0.4s, visibility 0.4s;
 			transition: opacity 0.4s, visibility 0.4s;
@@ -2132,7 +2134,7 @@
 	
 /* Google map */
 	#map {
-		height:450px;
+		height:500px;
 		width:auto;
 	}
 	.gm-style-iw * {

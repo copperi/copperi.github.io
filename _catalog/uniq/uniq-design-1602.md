@@ -13,5 +13,13 @@ product-type: uniq-vo
 
 product-connection: "боковое, нижнее"
 product-color: "любой цвет по RAL"
+product-features:
+- "Индивидуальный дизайн"
+- "Рельефный рисунок на передней панели"
+- "Любое полноцветное изображение"
+
+related:
+- uniq-design-1602
+- uniq-v-design-1712
 
 ---
