@@ -59,6 +59,7 @@
 					</div>
 					
 					<div class="hero-block container 50%">
+						<h4>{{ page.product-title }}</h4>
 						<p>{{ page.product-desc }}</p>
 					</div>
 					
@@ -112,6 +113,12 @@
 						</div>
 						
 					</section>
+					{% assign url_list = page.url | split: '/' %}
+					{% assign prod_name = url_list | last %}
+					{% assign back_url = page.url | remove: prod_name %}
+					<div class="view-more">
+						<a href="{{back_url}}">Смотреть всю коллекцию {{ page.product-name }}</a>						
+					</div>
 					{% endif %}
 					{% include pre-footer.html %}
 				</article>
