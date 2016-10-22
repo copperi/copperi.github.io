@@ -4,21 +4,25 @@ description: Купить Поролон EL 4060 в розницу с доста
 
 layout: product
 permalink: /catalog/:path
+weight: 2
 
 product-name: Plain
+product-title: Медный радиатор отопления Plain
 product-desc: Полностью медные радиаторы COPPERI Plain станут прекрасным дополнением к любому, даже самому строгому интерьеру, благодаря минималистичному дизайну и широкой цветовой гамме. Современная и надежная конструкция в сочетании с применяемыми материалами гарантирует стабильный и равномерный обогрев помещения в любые морозы.
 
 product-model: plain-design-1402
 product-type: plain-ss
 
 product-connection: "боковое, нижнее"
-product-color: "любой цвет по RAL"
+product-color: "шлифованная нержавеющая сталь"
 product-features:
 - "Полностью медный теплообменник"
-- "Четыре варианта отделки поверхности: глянцевая, матовая, муар или шагрень"
+- "Передняя панель из нержавеющей стали"
 
 related:
-- uniq-design-1602
-- uniq-v-design-1712
+- plain-design-1401
+- plain-v-design-1412
+- art-design-1403
+- antiq-design-1526
 
 ---

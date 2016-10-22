@@ -5,7 +5,10 @@ description: Купить Поролон EL 4060 в розницу с доста
 layout: product
 permalink: /catalog/:path
 
+weight: 1
+
 product-name: Duo
+product-title: Дизайнерский радиатор Duo
 product-desc: Дизайнреские радиаторы COPPERI Duo это не просто надежный и эффективный источник тепла, но и настоящее произведения искусства! Классический узор из благородной меди или рисунок в стиле хай-тек из полированной стали - всё для того, чтобы сделать Ваш интерьер неповторимым.
 
 product-model: duo-design-1501
@@ -19,7 +22,8 @@ product-features:
 - "Различные материалы отделки: медь, латунь, нержавеющая сталь и т.д."
 
 related:
-- uniq-design-1602
-- uniq-v-design-1712
-
+- antiq-design-1518
+- duo-v-design-1516
+- uniq-design-1609
+- antiq-design-1519
 ---

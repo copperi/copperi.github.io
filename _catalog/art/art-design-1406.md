@@ -5,7 +5,10 @@ description: Купить Поролон EL 4060 в розницу с доста
 layout: product
 permalink: /catalog/:path
 
+weight: 8
+
 product-name: Art
+product-title: Дизайн-радиатор отопления Art
 product-desc: Дизайн-радиаторы COPPERI Art с авторскими или индивидуальными рисунками на передней панели подчеркнут Ваши дизайнерские идеи и сделают любой интерьер неповторимым.
 
 product-model: art-design-1406
@@ -18,7 +21,8 @@ product-features:
 - "Рисунок любой сложности по Вашему эскизу"
 
 related:
-- uniq-design-1602
-- uniq-v-design-1712
-
+- art-design-1401
+- duo-design-1503
+- art-v-design-1416
+- uniq-design-1601
 ---

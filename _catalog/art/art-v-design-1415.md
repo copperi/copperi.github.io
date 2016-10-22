@@ -5,7 +5,10 @@ description: Купить Поролон EL 4060 в розницу с доста
 layout: product
 permalink: /catalog/:path
 
+weight: 11
+
 product-name: Art V
+product-title: Вертикальный дизайн-радиатор Art V
 product-desc: Вертикальные дизайн-радиаторы COPPERI Art V это уникальное сочетание выдающихся технических характеристик и потрясающего эстетического оформления.
 
 product-model: art-v-design-1415
@@ -18,7 +21,8 @@ product-features:
 - "Рисунок любой сложности по Вашему эскизу"
 
 related:
-- uniq-design-1602
-- uniq-v-design-1712
-
+- duo-v-design-1511
+- art-design-1405
+- uniq-v-design-1716
+- duo-v-design-1517
 ---

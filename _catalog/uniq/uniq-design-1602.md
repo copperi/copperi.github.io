@@ -5,7 +5,10 @@ description: Купить Поролон EL 4060 в розницу с доста
 layout: product
 permalink: /catalog/:path
 
+weight: 2
+
 product-name: Uniq
+product-title: Дизайнерский радиатор Uniq
 product-desc: Изготовленные по индивидуальному заказу дизайнерские радиаторы COPPERI Uniq с полноцветными изображениями на передней панели позволят Вам воплотить в жизнь самые смелые и оригинальные проекты интерьеров. Творите! Ваша фантазия не ограничена.
 
 product-model: uniq-design-1602
@@ -19,7 +22,8 @@ product-features:
 - "Любое полноцветное изображение"
 
 related:
-- uniq-design-1602
-- uniq-v-design-1712
-
+- art-design-1401
+- uniq-v-design-1715
+- duo-design-1502
+- uniq-design-1603
 ---

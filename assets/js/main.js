@@ -1,5 +1,3 @@
-/* skel-baseline v3.0.1 | (c) n33 | skel.io | MIT licensed */
-
 (function($) {
 
 	"use strict";
@@ -189,6 +187,8 @@
 		$(document).on('change', '.size_select', function() {
 			var target = $(this).data('target');
 			var show = $("option:selected", this).data('show');
+			var get = document.getElementById("pa_size");
+			document.getElementById('product-order').value= get.options[get.selectedIndex].text;
 			$(target).children().addClass('hide');
 			$(show).removeClass('hide');
 		});
@@ -230,6 +230,7 @@
 		});
 		
 	//Form validation
+	$(document).ready(function(){
 		$(".ajax-form-order").validate({
 			rules: {
 				name: {
@@ -238,11 +239,19 @@
 				},
 				phone: {
 				required: true
+				},
+				email: {
+				required: true,
+				email: true
 				}
 			},
 			messages: {
 				name: "Укажите Ваше имя",
-				phone: "Укажите Ваш телефон"
+				phone: "Укажите Ваш телефон",
+				email: {
+				  required: "Укажите Ваш e-mail",
+				  email: "Формат: name@domain.com"
+				},
 			},
 			// errorPlacement: function(error, element) {
 			// },
@@ -263,5 +272,6 @@
 				return false; //to stop the form from submitting
 			}
 		});
+	});
 
 })(jQuery);

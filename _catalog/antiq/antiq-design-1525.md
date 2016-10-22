@@ -5,7 +5,10 @@ description: Купить Поролон EL 4060 в розницу с доста
 layout: product
 permalink: /catalog/:path
 
+weight: 8
+
 product-name: Antiq
+product-title: Медный дизайн-радиатор Antiq
 product-desc: Дизайнерские радиаторы отопления COPPERI Antiq с передней панелью, выполненной из меди или латуни прекрасно подойдут как для классического, так и для современного интерьера. Нанесение патины производится мастерами вручную, что делает каждый радиатор поистине уникальным произведением искусства.
 
 product-model: antiq-design-1525
@@ -19,7 +22,8 @@ product-features:
 - "Полностью медный теплообменник"
 
 related:
-- uniq-design-1602
+- antiq-design-1520
 - uniq-v-design-1712
-
+- uniq-design-1602
+- uniq-design-1601
 ---

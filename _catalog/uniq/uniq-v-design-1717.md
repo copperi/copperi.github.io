@@ -5,7 +5,10 @@ description: Купить Поролон EL 4060 в розницу с доста
 layout: product
 permalink: /catalog/:path
 
+weight: 4
+
 product-name: Uniq V
+product-title: Дизайнерский радиатор Uniq V
 product-desc: Вертикальный дизайн-радиатор COPPERI Uniq V это часть интерьера, которой можно любоваться бесконечно. Строгая форма и яркое оформление передней панели мгновенно обращают на себя внимание и не дают отвести взгляд.
 
 product-model: uniq-v-design-1717
@@ -19,6 +22,8 @@ product-features:
 - "Любое полноцветное изображение"
 
 related:
-- uniq-design-1602
-- uniq-v-design-1712
+- duo-v-design-1514
+- uniq-v-design-1711
+- uniq-design-1605
+- uniq-design-1609
 ---

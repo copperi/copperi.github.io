@@ -4,8 +4,10 @@ description: Купить Поролон EL 4060 в розницу с доста
 
 layout: product
 permalink: /catalog/:path
+weight: 3
 
 product-name: Plain V
+product-title: Вертикальный радиатор отопления Plain V
 product-desc: Вертикальные радиаторы из коллекции COPPERI Plain V способны не только обогреть, но и украсить Ваш дом благодаря огромному множеству цветовых решений. Выполненные в строгом, классическом стиле они отличаются потрясающей надёжностью и долговечностью.
 
 product-model: plain-v-design-1411
@@ -18,7 +20,9 @@ product-features:
 - "Четыре варианта отделки поверхности: глянцевая, матовая, муар или шагрень"
 
 related:
-- uniq-design-1602
-- uniq-v-design-1712
+- plain-design-1401
+- plain-v-design-1412
+- art-v-design-1412
+- uniq-v-design-1714
 
 ---

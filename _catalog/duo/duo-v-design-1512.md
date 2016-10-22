@@ -5,7 +5,10 @@ description: Купить Поролон EL 4060 в розницу с доста
 layout: product
 permalink: /catalog/:path
 
+weight: 4
+
 product-name: Duo V
+product-title: Дизайнерский радиатор Duo V
 product-desc: Благодаря различным сочетаниям цветов и материалов, вертикальные дизайнерские радиаторы отопления COPPERI Duo V позволяют создать экслклюзивный элемент декора, который удачно впишется в самый изысканный интерьер.
 
 product-model: duo-v-design-1512
@@ -19,7 +22,8 @@ product-features:
 - "Различные материалы отделки: медь, латунь, нержавеющая сталь и т.д."
 
 related:
-- uniq-design-1602
-- uniq-v-design-1712
-
+- duo-design-1503
+- art-v-design-1414
+- uniq-v-design-1717
+- uniq-v-design-1711
 ---

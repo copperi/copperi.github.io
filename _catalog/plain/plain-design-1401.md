@@ -4,6 +4,7 @@ description: Купить Поролон EL 4060 в розницу с доста
 
 layout: product
 permalink: /catalog/:path
+weight: 1
 
 product-name: Plain
 product-title: Медный радиатор отопления Plain
@@ -19,7 +20,9 @@ product-features:
 - "Четыре варианта отделки поверхности: глянцевая, матовая, муар или шагрень"
 
 related:
-- uniq-design-1602
-- uniq-v-design-1712
+- plain-design-1402
+- plain-v-design-1411
+- art-design-1404
+- antiq-design-1518
 
 ---
