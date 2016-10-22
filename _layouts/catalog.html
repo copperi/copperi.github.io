@@ -19,7 +19,7 @@
 					<section id="frontpage-grid">
 						<div class="row 0%">
 						{% for product in site.catalog %}
-							{% if (product.layout == "category") %}
+							{% if product.layout == "category" %}
 							{% assign url_list = product.url | split: '/' %}
 							{% assign prod_name = url_list | last %}
 							<div class="3u 4u(large) 6u(small)">
@@ -27,7 +27,7 @@
 									<div class="wrapper">
 										<div class="inner-wrapper category">	
 											<h3>{{product.page-title}}</h3>
-											<p>Смотреть всю коллекцию</p>
+											<p>Смотреть коллекцию</p>
 										</div>
 									</div>
 								</a>

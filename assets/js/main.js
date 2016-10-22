@@ -51,6 +51,7 @@
 			  }
 			});	
 
+	
 	// Nav.
 		var	$nav = document.querySelector('#nav'),
 			$navToggle = document.querySelector('a[href="#nav"]'),
@@ -180,6 +181,7 @@
 				dots: true,
 				arrows: true,
 				infinite: true,
+				lazyLoad: 'ondemand',
 				speed: 700
 			  });
 			});
@@ -192,6 +194,74 @@
 		});
 		$(document).ready(function(){
 			$('.size_select').trigger('change');
+		});
+		
+	//Modal
+		$(document).ready(function(){
+			var $btn = document.querySelector('#myBtn'),
+				$modalClose = document.querySelector('#myClose'),
+				$modal = document.querySelector('#myModal');
+				
+				var hideModal=function(){
+					$modal.classList.remove('show');
+				};
+				
+				$btn.addEventListener('click', function(event) {
+
+					event.preventDefault();
+					event.stopPropagation();
+
+					$modal.classList.toggle('show');
+				});
+				
+				$modalClose.addEventListener('click', function(event) {
+
+					event.preventDefault();
+					event.stopPropagation();
+
+					$modal.classList.toggle('show');
+				});
+				
+				window.onclick = function(event) {
+					if (event.target == $modal) {
+						hideModal();
+					}
+				};
+		});
+		
+	//Form validation
+		$(".ajax-form-order").validate({
+			rules: {
+				name: {
+				required: true,
+				minlength: 2
+				},
+				phone: {
+				required: true
+				}
+			},
+			messages: {
+				name: "Укажите Ваше имя",
+				phone: "Укажите Ваш телефон"
+			},
+			// errorPlacement: function(error, element) {
+			// },
+			submitHandler: function(form) {
+				$.ajax({
+					dataType: "jsonp",
+					url: "https://getsimpleform.com/messages/ajax?form_api_token=6155e5a53e9a2468cc242519b0569ead",
+					data: $(".ajax-form-order").serialize() 
+					}).done(function() {
+					//callback which can be used to show a thank you message
+					//and reset the form
+					$(".ajax-form-order").hide();
+					$(".form-thank-you-order").fadeIn("400");
+					// yaCounter31865101.reachGoal('order');
+					// ga('send', 'event', 'form', 'order');
+					// fbq('track', 'Lead');
+				});
+				return false; //to stop the form from submitting
+			}
 		});
 
 })(jQuery);
