@@ -28,7 +28,7 @@
 								{% for img in img_array %}
 								<div>
 									<div class="banner b-product">
-										<img data-lazy="{{ img }}" alt="{{page.product-title}}-{{forloop.index}}">
+										<img src="{{ img }}" alt="{{page.product-title}}-{{forloop.index}}">
 									</div>
 								</div>
 								{% endfor %}
@@ -98,7 +98,7 @@
 										<div class="3u 4u(large) 6u(small)">
 											<a href="{{ product.url }}" class="copperi-link">
 												<div class="inner-wrapper product">	
-													<img class="image fit pop" src="/images/catalog/{{product.product-model}}-small.jpg">
+													<img class="image fit pop" src="/images/catalog/{{product.product-model}}-small.jpg" alt="{{product.product-title}}">
 													<h3>{{ product.product-name }}</h3>
 													{% assign first-model = site.data[product.product-type] | first%}
 													<p>{{ first-model.price }}</p>
