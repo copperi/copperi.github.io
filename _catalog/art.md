@@ -8,7 +8,7 @@ redirect_from:
 - /copperi_art.html
 - /copperi_art_v.html
 page-title: Art
-page-subtitle: Не придумал ещё
+page-subtitle: Индивидуальный дизайн по Вашему эскизу
 
 banner-image: "/images/banner-art.jpg"
 alt-header: 1
