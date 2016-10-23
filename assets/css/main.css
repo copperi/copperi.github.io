@@ -1031,7 +1031,7 @@
 			box-shadow: none;
 		}
 
-		#header > h1 {
+		#header > h2 {
 			display: inline-block;
 			height: inherit;
 			left: 1.25em;
@@ -1045,7 +1045,7 @@
 			font-weight: 500;
 		}
 		
-			#header > h1 a:after{
+			#header > h2 a:after{
 				content: '';
 				width: 80%;
 				position: absolute;
@@ -1057,7 +1057,7 @@
 				transition: all 0.7s ease-in-out;
 			}
 			
-			#header.alt > h1 a:after{
+			#header.alt > h2 a:after{
 				background-color: #ffffff;
 				width: 0;
 				-webkit-transition: none;
