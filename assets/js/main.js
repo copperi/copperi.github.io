@@ -38,7 +38,7 @@
 			$body.classList.remove('is-loading');
 		});
 		
-	//Pop up animation	
+	//Pop up animation
 		$('.pop').scrollex({
 			  enter: function() {
 				$(this).css('-moz-animation-name', 'pop-up');
@@ -48,8 +48,7 @@
 				$(this).css('animation-name', 'pop-up');
 			  }
 			});	
-
-	
+			
 	// Nav.
 		var	$nav = document.querySelector('#nav'),
 			$navToggle = document.querySelector('a[href="#nav"]'),
@@ -183,7 +182,8 @@
 				speed: 700
 			  });
 			});
-			
+	
+	// Select		
 		$(document).on('change', '.size_select', function() {
 			var target = $(this).data('target');
 			var show = $("option:selected", this).data('show');
@@ -229,49 +229,23 @@
 				};
 		});
 		
-	//Form validation
+	//Form submission
 	$(document).ready(function(){
-		$(".ajax-form-order").validate({
-			rules: {
-				name: {
-				required: true,
-				minlength: 2
-				},
-				phone: {
-				required: true
-				},
-				email: {
-				required: true,
-				email: true
-				}
-			},
-			messages: {
-				name: "Укажите Ваше имя",
-				phone: "Укажите Ваш телефон",
-				email: {
-				  required: "Укажите Ваш e-mail",
-				  email: "Формат: name@domain.com"
-				},
-			},
-			// errorPlacement: function(error, element) {
-			// },
-			submitHandler: function(form) {
-				$.ajax({
-					dataType: "jsonp",
-					url: "https://getsimpleform.com/messages/ajax?form_api_token=6155e5a53e9a2468cc242519b0569ead",
-					data: $(".ajax-form-order").serialize() 
-					}).done(function() {
-					//callback which can be used to show a thank you message
-					//and reset the form
-					$(".ajax-form-order").hide();
-					$(".form-thank-you-order").fadeIn("400");
-					// yaCounter31865101.reachGoal('order');
-					// ga('send', 'event', 'form', 'order');
-					// fbq('track', 'Lead');
-				});
-				return false; //to stop the form from submitting
-			}
-		});
+		$('.ajax-form').submit(function(event) {
+			event.preventDefault();
+			var form = $(this);
+			$.ajax({
+				dataType: "jsonp",
+				url: "https://getsimpleform.com/messages/ajax?form_api_token=6155e5a53e9a2468cc242519b0569ead",
+				data: form.serialize()
+					}).done(function(data) {
+						$(".ajax-form").hide();
+						$(".form-succes").fadeIn("400");
+					}).fail(function(data) {
+						$(".ajax-form").hide();
+						$(".form-error").fadeIn("400");
+					});
+		  });
 	});
 
 })(jQuery);
