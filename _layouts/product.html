@@ -15,7 +15,7 @@
 			<div id="not-main">
 				<article  class="special">
 					<section id="product-hero">
-						<section id="banner-wrapper" style="color:#ccc">
+						<div id="banner-wrapper" style="color:#ccc">
 							{% assign img_array = "" | split:"," %}
 							{% for file in site.static_files %}
 								{% if file.path contains page.url %}
@@ -34,7 +34,7 @@
 								{% endfor %}
 							</div>
 							{% endif %}
-						</section>
+						</div>
 						<header class="product">
 							<h2>{{ page.product-name }}</h2>
 							<div class="var_attr">
