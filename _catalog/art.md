@@ -1,9 +1,12 @@
 ---
-title: COPPERI - Art
-description: Art
+title: Коллекция дизайн-радиаторов отопления COPPERI Art
+description: Цены на дизайн-радиаторы из коллекции COPPERI Art
 layout: category
 permalink: /catalog/:path/
-
+redirect_from:
+- /collection_art.html
+- /copperi_art.html
+- /copperi_art_v.html
 page-title: Art
 page-subtitle: Не придумал ещё
 

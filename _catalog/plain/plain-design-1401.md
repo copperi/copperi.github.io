@@ -1,9 +1,12 @@
 ---
-title: Поролон EL 4060 купить по лучшей цене с доставкой - Поролоныч
-description: Купить Поролон EL 4060 в розницу с доставкой по Москве в интернет-магазине Поролоныча.
+title: Медный радиатор отопления COPPERI Plain модель CP-1401. Цена и размеры
+description: Купить медный радиатор отопления COPPERI Plain модель CP-1401. Цена и размеры по цене производителя в Москве.
 
 layout: product
 permalink: /catalog/:path
+redirect_from:
+- /price.html
+
 weight: 1
 
 product-name: Plain
