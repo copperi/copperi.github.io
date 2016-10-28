@@ -5,3 +5,10 @@ gems:
 collections:
   catalog:
     output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: /images/banner-antiq.jpg
