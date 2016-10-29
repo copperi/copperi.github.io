@@ -182,7 +182,31 @@
 				speed: 700
 			  });
 			});
-	
+			
+		$(document).ready(function(){
+			  $('.slick-product').slick({
+				dots: true,
+				arrows: true,
+				infinite: true,
+				lazyLoad: 'ondemand',
+				speed: 700,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				centerMode: true,
+				centerPadding: '23%',
+				responsive: [
+					{
+						breakpoint: 980,
+						settings: {
+							centerMode: false,
+							centerPadding: '0px',
+							slidesToShow: 1
+						}
+					}
+				]
+			});
+		});
+		
 	// Select		
 		$(document).on('change', '.size_select', function() {
 			var target = $(this).data('target');
