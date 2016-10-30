@@ -265,6 +265,9 @@
 					}).done(function(data) {
 						$(".ajax-form").hide();
 						$(".form-succes").fadeIn("400");
+						yaCounter21957292.reachGoal('order');
+						ga('send', 'event', 'form', 'order');
+						fbq('track', 'Lead');
 					}).fail(function(data) {
 						$(".ajax-form").hide();
 						$(".form-error").fadeIn("400");
