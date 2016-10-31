@@ -30,7 +30,9 @@
     padding: 0;
 
     cursor: pointer;
-	transform: scale(0.8,1.2);
+	-webkit-transform: scale(0.8,1.2);
+	    -ms-transform: scale(0.8,1.2);
+	        transform: scale(0.8,1.2);
     color: inherit;
     border: none;
     outline: none;
@@ -78,9 +80,7 @@
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-	-moz-transition: opacity 0.5s ease;
 	-webkit-transition: opacity 0.5s ease;
-	-ms-transition: opacity 0.5s ease;
 	transition: opacity 0.5s ease;
 }
 
@@ -184,7 +184,6 @@
 	border-radius: 50%;
 	opacity: .4;
 	-webkit-transition: opacity .2s ease-in-out;
-    -o-transition: opacity .2s ease-in-out;
     transition: opacity .2s ease-in-out;
 }
 .slick-dots li button:hover,
@@ -200,25 +199,34 @@
 } 
 
 .slick-center  {
+	-webkit-transition: 0.3s all ease;
 	transition: 0.3s all ease;
 }
 
 .b-product img {
+	-webkit-transition: 0.7s all ease;
 	transition: 0.7s all ease;
 	opacity: 0.7;
-	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	    -ms-transform: scale(0.8);
+	        transform: scale(0.8);
 }
 
 .slick-center div img {
-	transform: scale(1);
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
 	opacity: 1;
 }
 
 @media screen and (max-width: 980px) {
 		
 		.b-product img {
+			-webkit-transition: 0.7s all ease;
 			transition: 0.7s all ease;
 			opacity: 1;
-			transform: scale(1);
+			-webkit-transform: scale(1);
+			    -ms-transform: scale(1);
+			        transform: scale(1);
 		}
 	}
