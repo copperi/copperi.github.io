@@ -5,14 +5,14 @@
 		{% include head.html %}
 		{% seo %}
 	</head>
-	<body id="top" class="index is-loading">
+	<body id="top" class="is-loading">
 		<div id="page-wrapper">
 		<!-- Header -->
 		{% include header.html %}	
 		<!-- Nav -->
 		{% include nav.html %}		
 		<!-- Banner -->
-		{% include banner-small.html %}	
+		{% include banner-generic.html %}	
 		<!-- Main -->
 			<div id="not-main">
 				<article  class="special">
@@ -39,7 +39,9 @@
 						{% endfor %}
 						</div>
 					</section>
+					<section class="container 75%" style="text-align:justify">
 					{{ content }}
+					</section>
 					{% include pre-footer.html %}
 				</article>
 			</div>

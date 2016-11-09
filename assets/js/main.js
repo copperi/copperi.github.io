@@ -221,37 +221,76 @@
 		});
 		
 	//Modal
+		// $(document).ready(function(){
+			// var $btn = document.querySelector('#myBtn'),
+				// $modalClose = document.querySelector('#myClose'),
+				// $modal = document.querySelector('#myModal');
+				
+				// var hideModal=function(){
+					// $modal.classList.remove('show');
+				// };
+				
+				// $btn.addEventListener('click', function(event) {
+
+					// event.preventDefault();
+					// event.stopPropagation();
+
+					// $modal.classList.toggle('show');
+				// });
+				
+				// $modalClose.addEventListener('click', function(event) {
+
+					// event.preventDefault();
+					// event.stopPropagation();
+
+					// $modal.classList.toggle('show');
+				// });
+				
+				// window.onclick = function(event) {
+					// if (event.target == $modal) {
+						// hideModal();
+					// }
+				// };
+		// });
+		
+	//Modal
 		$(document).ready(function(){
-			var $btn = document.querySelector('#myBtn'),
-				$modalClose = document.querySelector('#myClose'),
-				$modal = document.querySelector('#myModal');
-				
-				var hideModal=function(){
-					$modal.classList.remove('show');
-				};
-				
-				$btn.addEventListener('click', function(event) {
-
-					event.preventDefault();
-					event.stopPropagation();
-
-					$modal.classList.toggle('show');
+			
+			var btn = document.getElementsByClassName('modal-open');
+			for (var i = 0; i < btn.length; i++) {
+				var thisBtn = btn[i];
+				thisBtn.addEventListener("click", function(event){
+					var	modal = document.getElementById(this.getAttribute('data-modal'));
+					modal.classList.toggle('show');
 				});
-				
-				$modalClose.addEventListener('click', function(event) {
-
-					event.preventDefault();
-					event.stopPropagation();
-
-					$modal.classList.toggle('show');
+								
+			};
+			
+			var btnClose = document.getElementsByClassName('modal-close');
+			for (var i = 0; i < btnClose.length; i++) {
+				var thisBtn = btnClose[i];
+				thisBtn.addEventListener("click", function(event){
+					var	modal = document.getElementById(this.getAttribute('data-close'));
+					modal.classList.toggle('show');
 				});
-				
-				window.onclick = function(event) {
-					if (event.target == $modal) {
-						hideModal();
-					}
-				};
+			};
+			
 		});
+		
+		$(document).ready(function(){
+						
+			window.addEventListener('click', function(event) {
+				var modal = document.getElementsByClassName('modal');
+				for (var i = 0; i < modal.length; i++) {
+					var thisModal = modal[i];
+					if (event.target == thisModal) {
+						thisModal.classList.remove('show');
+					}
+				}
+			});
+			
+		});	
+		
 		
 	//Form submission
 	$(document).ready(function(){

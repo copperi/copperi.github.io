@@ -42,7 +42,7 @@
 								<p class="s{{forloop.index}} hide">{{model.price}}</p>
 								{% endfor %}
 							</div>
-							<button id="myBtn" class="button">Заказать</button>
+							<button id="btn-order" class="button modal-open" data-modal="modal-order">Заказать</button>
 						</header>							
 					</section>
 					<div class="hero-block container 75%">
@@ -123,23 +123,23 @@
 					{% include pre-footer.html %}
 				</article>
 			</div>
-
+		<!-- CTA -->
+		{% include cta.html %}	
 		<!-- Footer -->
 		{% include footer.html %}	
 		<!-- Scripts -->
 		{% include scripts.html %}	
 		</div>
 		<!-- The Modal -->
-		<div id="myModal" class="modal">
+		<div id="modal-order" class="modal">
 
 			<!-- Modal content -->
 			<div class="modal-content special">
-				<span id="myClose" class="modal-close"></span>
+				<span id="modal-close-order" class="modal-close" data-close="modal-order"></span>
 				<form action="#" class="ajax-form">
 					<h3>Заказ</h3>
 					<input type="text" class="name" name="name" placeholder="Ваше имя*" required>
 					<input type="tel" class="phone" name="phone" placeholder="Номер телефона*" required>
-					<input type="email" class="email" name="email" placeholder="Е-mail*" required>
 					<input style="display:none" type="text" class="product" name="product" id="product-order" value="">
 					<ul class="actions">
 						<li><input type="submit" class="submit button fit" value="Отправить"></li>

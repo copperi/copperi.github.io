@@ -3798,3 +3798,47 @@
 		cursor: pointer;
 	}
 	
+/* CTA */
+
+	#cta {
+		background-attachment: scroll;
+		background-color: #2b2b2b;
+		background-image: url("/images/banner-uniq-cta.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: #fff;
+		text-align: center;
+	}
+	
+	#cta .inner-cta {
+		padding: 5em;
+		background: rgba(0,0,0,0.6);
+	}
+		
+		#cta h2:after {
+			display: none;
+		}
+		
+		#cta ul.actions {
+			margin: 0;
+		}
+		
+		@media screen and (max-width: 1280px) {
+			#cta .inner-cta {
+				padding: 4em;
+			}
+		}
+		
+		@media screen and (max-width: 980px) {
+			#cta .inner-cta  {
+				padding: 3em;
+			}
+		}
+		
+		@media screen and (max-width: 736px) {
+			#cta .inner-cta  {
+				padding: 3em 1.5em;
+			}
+		}
+	
