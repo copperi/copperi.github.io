@@ -270,6 +270,12 @@
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>http://copperi.ru/catalog/duo/duo-design-1505</loc>
+  <lastmod>2016-11-16T05:53:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>http://copperi.ru/catalog/duo/duo-v-design-1513</loc>
   <lastmod>2016-10-24T05:53:33+00:00</lastmod>
   <changefreq>weekly</changefreq>
@@ -290,6 +296,18 @@
 <url>
   <loc>http://copperi.ru/catalog/duo/duo-v-design-1517</loc>
   <lastmod>2016-10-24T05:53:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://copperi.ru/catalog/duo/duo-v-design-1518</loc>
+  <lastmod>2016-11-16T05:53:33+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://copperi.ru/catalog/duo/duo-v-design-1519</loc>
+  <lastmod>2016-11-16T05:53:33+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.64</priority>
 </url>
