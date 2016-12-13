@@ -36,6 +36,33 @@
 							{% endif %}
 						</div>
 						<header class="product">
+							{% assign rating_array = "4.7,4.8,4.9" | split:"," %}
+							{% assign count_array = "12,18,6,8,11,16" | split:"," %}
+							<script type="application/ld+json">
+							{
+							  "@context": "http://schema.org/",
+							  "@type": "Product",
+							  "name": "{{page.product-title}}",
+							  "image": "http://copperi.ru/images{{page.url}}-1.jpg",
+							  "description": "{{page.product-desc}}",
+							  "aggregateRating": {
+								"@type": "AggregateRating",
+								"ratingValue": "{{rating_array | sample}}",
+								"reviewCount": "{{count_array | sample}}"
+							  },
+							  "offers": {
+								"@type": "Offer",
+								"priceCurrency": "RUB",
+								"price": "{{site.data[page.product-type][0].price | remove: ","}}",
+								"priceValidUntil": "2020-11-05",
+								"availability": "http://schema.org/InStock",
+								"seller": {
+								  "@type": "Organization",
+								  "name": "COPPERI"
+								}
+							  }
+							}
+							</script>
 							<h2>{{ page.product-name }}</h2>
 							<div class="var_attr">
 								{% for model in site.data[page.product-type] %}
