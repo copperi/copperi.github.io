@@ -92,12 +92,14 @@
 					
 					<div class="hero-block container 75%">
 						<div class="row">
+							{% assign first-model-1 = site.data[page.product-type] | first%}
+							{% assign last-model-1 = site.data[page.product-type] | last%}
 							{% assign model_array = page.product-model | split: '-' %}
 							{% assign design-number = model_array | last %}
 							<ul class="attr">
 								<li class="var_attr">Артикул: {% for model in site.data[page.product-type] %}<span class="s{{forloop.index}} hide">{{model.model-no}}-{{design-number}}</span>{% endfor %}</li>
 								<li class="var_attr">Размер: {% for model in site.data[page.product-type] %}<span class="s{{forloop.index}} hide">{{model.size}}</span>{% endfor %}</li>
-								<li class="var_attr">Мощность: {% for model in site.data[page.product-type] %}<span class="s{{forloop.index}} hide">{{model.wattage}} Вт</span>{% endfor %}</li>
+								<li class="var_attr">Мощность: {% for model in site.data[page.product-type] %}<span class="s{{forloop.index}} hide">{{model.wattage}} ({{first-model-1.wattage}}-{{last-model-1.wattage}}) Вт</span>{% endfor %}</li>
 								<li>Подключение: <span>{{ page.product-connection }}</span></li>
 								<li>Цвет: <span>{{ page.product-color }}</span></li>
 							</ul>
