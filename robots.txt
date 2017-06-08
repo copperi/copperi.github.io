@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /test
-Host: copperi.ru
-Sitemap: http://copperi.ru/sitemap.xml
+Host: https://copperi.ru
+Sitemap: https://copperi.ru/sitemap.xml
