@@ -6,378 +6,441 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://copperi.ru/</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/plain/</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/medniy-radiator-copperi</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/art/</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/plain/</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/art/</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/antiq/</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/about</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/antiq/</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/how-to-buy</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/about</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/partners</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/how-to-buy</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/contact</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/partners</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/tech-info</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/contact</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/faq</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/tech-info</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/interiors</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/faq</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/antiq/antiq-design-1518</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/interiors</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/plain/plain-design-1401</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/antiq/antiq-design-1518</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/duo-v-design-1514</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/plain/plain-design-1401</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/duo-design-1501</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/duo-v-design-1514</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/art/art-design-1401</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/duo-design-1501</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-design-1606</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/art/art-design-1401</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-v-design-1717</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-design-1606</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/antiq/antiq-design-1519</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-v-design-1717</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/plain/plain-v-design-1411</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/antiq/antiq-design-1519</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/antiq/antiq-design-1525</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/plain/plain-v-design-1411</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/art/art-v-design-1411</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/antiq/antiq-design-1525</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-design-1602</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/art/art-v-design-1411</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-v-design-1716</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-design-1602</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-v-design-1716</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/plain/plain-design-1402</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/plain/plain-v-design-1412</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/plain/plain-design-1402</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/art/art-design-1402</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/plain/plain-v-design-1412</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/art/art-v-design-1412</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/art/art-design-1402</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/art/art-design-1403</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/art/art-v-design-1412</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/art/art-design-1404</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/art/art-design-1403</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/art/art-design-1405</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/art/art-design-1404</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/art/art-design-1406</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/art/art-design-1405</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/art/art-v-design-1413</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/art/art-design-1406</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/art/art-v-design-1414</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/art/art-v-design-1413</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/art/art-v-design-1415</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/art/art-v-design-1414</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/art/art-v-design-1416</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/art/art-v-design-1415</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/art/art-v-design-1417</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/art/art-v-design-1416</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/duo-design-1502</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/art/art-v-design-1417</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/duo-v-design-1511</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/duo-design-1502</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/duo-v-design-1512</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/duo-v-design-1511</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/duo-design-1503</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/duo-v-design-1512</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/duo-design-1504</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/duo-design-1503</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/duo-design-1505</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/duo-design-1504</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/duo-v-design-1513</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/duo-design-1505</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/duo-v-design-1518</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/duo-v-design-1513</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/duo-v-design-1519</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/duo-v-design-1518</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/duo-v-design-1515</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/duo-v-design-1519</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/duo-v-design-1516</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/duo-v-design-1515</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/duo/duo-v-design-1517</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/duo-v-design-1516</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-design-1601</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/duo/duo-v-design-1517</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-design-1605</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-design-1601</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-design-1604</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-design-1605</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-design-1603</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-design-1604</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-v-design-1715</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-design-1603</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-v-design-1714</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-v-design-1715</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-v-design-1713</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-v-design-1714</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-v-design-1712</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-v-design-1713</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-v-design-1711</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-v-design-1712</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-design-1609</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-v-design-1711</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-design-1608</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-design-1609</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-design-1610</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-design-1608</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-design-1607</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-design-1610</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-v-design-1718</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-design-1607</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/uniq/uniq-v-design-1719</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-v-design-1718</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/antiq/antiq-design-1520</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/uniq/uniq-v-design-1719</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/antiq/antiq-design-1521</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/antiq/antiq-design-1520</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/antiq/antiq-design-1522</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/antiq/antiq-design-1521</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/antiq/antiq-design-1523</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/antiq/antiq-design-1522</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/antiq/antiq-design-1524</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://copperi.ru/catalog/antiq/antiq-design-1523</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
+  <loc>https://copperi.ru/catalog/antiq/antiq-design-1526</loc>
+  <lastmod>2017-06-08T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://copperi.ru/catalog/antiq/antiq-design-1524</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://copperi.ru/catalog/antiq/antiq-design-1526</loc>
-  <lastmod>2017-02-19T15:09:17+00:00</lastmod>
-  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
 </url>
 </urlset>
