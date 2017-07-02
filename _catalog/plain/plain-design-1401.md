@@ -4,8 +4,6 @@ description: Купить медный радиатор отопления COPPE
 
 layout: product
 permalink: /catalog/:path
-redirect_from:
-- /price.html
 
 weight: 1
 
