@@ -3167,7 +3167,7 @@
 		border: 0;
 		background: #fff;
 		opacity: 1;
-		height: 32em;
+		height: 36em;
 		border-bottom: solid 1px #f5f5f5;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -3184,6 +3184,13 @@
 			opacity: 0.8;
 		}
 
+	@media screen and (max-width: 1980px) {
+		
+		.copperi-link {
+			height: 32em;
+		}
+	}
+	
 	@media screen and (max-width: 980px) {
 		
 		.copperi-link {
