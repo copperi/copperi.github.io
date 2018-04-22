@@ -1,7 +1,7 @@
-plugins:
+﻿plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
-
+ 
 url: https://copperi.ru
 
 title: ""
@@ -15,4 +15,4 @@ defaults:
     scope:
       path: ""
     values:
-      image: /images/banner-antiq.jpg
+      image: /images/dizaynerskiy-radiator-otoplenia-copperi-anisotropia-cu.jpg

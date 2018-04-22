@@ -15,8 +15,11 @@ src="https://www.facebook.com/tr?id=1588405754518490&ev=PageView&noscript=1"
 /></noscript>
 <!-- DO NOT MODIFY -->
 <!-- End Facebook Pixel Code -->
-<header id="header"{% if page.alt-header %} class="alt" {% endif %}>
-	<h2><a href="/">COPPERI</a></h2>
-	<a href="tel:+7(499)390-72-14" class="phone"><span>+7 (499) 390-72-14</span></a>
-	<a href="#nav">Меню</a>
-</header>
+
+<div class="header-wrapper">
+	<header id="header" class="container {% if page.product %} product-header {% endif %}">
+		<a href="#nav"><img src="/images/menu.svg" alt="Меню"/></a>
+		<a href="/" class="logo">copperi</a>
+		<a href="tel:+74993907214" class="phone"><img src="/images/phone.svg"  alt="Телефон"/></a>
+	</header>
+</div>

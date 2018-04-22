@@ -1,16 +1,34 @@
 ---
-title: Каталог дизайн-радиаторов отопления - COPPERI
-description: Каталог медные дизайн-радиаторов отопления от производителя. Цены, размеры,  медных радиаторов COPPERI
-layout: catalog
+title: Каталог дизайн-радиаторов отопления - copperi
+description: Каталог дизайнерских радиаторов отопления от производителя. Цены и размеры медных радиаторов copperi
+
 permalink: /catalog/
+layout: generic
 
-page-title: Каталог
-page-subtitle: Все коллекции дизайн-радиаторов
-
-banner-color: "#EAF9F2"
+page-title: Каталог дизайн радиаторов
 ---
-<header class="align-center">
-	<h3>Не нашли ничего подходящего? Нет проблем!</h3>
-</header>
-<p>Модели в нашем каталоге это скорее демонстрация наших возможностей и основа для вашего творчества. Мы с радостью изготовим для вас радиатор с индивидуальным дизайном, при этом на стоимость это никак не повлияет.</p>
-<p>Присылайте свои идеи нам электронную почту <a href="mailto:info@copperi.ru"><b>info@copperi.ru</b></a> или просто позвоните нам, мы обязательно что-нибудь придумаем.</p>
+<article>
+	{% assign categories = site.catalog | where: "category", 1 | sort: "weight"%}
+		{% for cat in categories %}
+		<section class="container">
+			<header>
+				<h2>{{ cat.coll-title }}</h2>
+				<p>{{ cat.coll-desc }}</p>
+			</header>
+			<div class="row uniform 50%">
+			{% assign models = site.catalog | where_exp: "item", "item.path contains cat.name" | where_exp: "item", "item.category != 1" | sort: "weight" %}
+			{% for model in models %}
+				{% assign url_list = model.url | split: '/' %}
+				{% assign model_name = url_list | last %}
+				<div class="4u 6u(medium) 12u(xsmall)">
+					<a class="feature" href="{{model.url}}">
+						<img src="/images/catalog/{{cat.name}}/{{model_name}}-small.jpg" />
+						<h3>{{ model.model-title}}</h3>
+					</a>
+				</div>
+			{% endfor %}
+			</div>
+		</section>
+		<hr class="major" />
+		{% endfor %}
+</article>

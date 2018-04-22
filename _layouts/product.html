@@ -1,163 +1,187 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="ru">
 	<head>
 		{% include head.html %}
 		{% seo %}
 	</head>
-	<body id="top" class="is-loading">
+	<body class="is-loading">
 		<div id="page-wrapper">
-		<!-- Header -->
-		{% include header.html %}	
-		<!-- Nav -->
-		{% include nav.html %}		
-		<!-- Main -->
-			<div id="not-main">
-				<article  class="special">
-					<section id="product-hero">
-						<div id="banner-wrapper" style="color:#ccc">
-							{% assign img_array = "" | split:"," %}
-							{% for file in site.static_files %}
-								{% if file.path contains page.url %}
+			<!-- Header -->
+			{% include header.html %}	
+			<!-- Nav -->
+			{% include nav.html %}	
+
+			<!-- Main -->
+			<article>
+				<section>
+					{% assign url_list = page.url | split: '/' %}
+					{% assign model_name = url_list | last %}
+				
+					{% assign img_array = "" | split:"," %}
+					{% for file in site.static_files %}
+						{% if file.path contains model_name %}
+							{% if file.path contains "catalog" %}
+								{% unless file.path contains "small" %}
 									{% assign img_array = img_array | push: file.path %}
+								{% endunless %}
+							{% endif %}
+						{% endif %}
+					{% endfor %}
+					
+					<div class="row">
+						<div class="6u 12u(medium)">
+							<img class="image fit" src="{{ img_array[0] }}" alt="Дизайнерский радиатор отопления copperi {{page.model-title}}"/>
+						</div>
+						<div class="6u 12u(medium)">
+							<div class="hero-container container">
+								<header>
+									{% assign rating_array = "4.7,4.8,4.9" | split:"," %}
+									{% assign count_array = "12,18,6,8,11,16" | split:"," %}
+									<script type="application/ld+json">
+									{
+									  "@context": "http://schema.org/",
+									  "@type": "Product",
+									  "name": "{{page.model-title}}",
+									  "image": "http://copperi.ru{{img_array[0]}}",
+									  "description": "{{page.model-desc}}",
+									  "aggregateRating": {
+										"@type": "AggregateRating",
+										"ratingValue": "{{rating_array | sample}}",
+										"reviewCount": "{{count_array | sample}}"
+									  },
+									  "offers": {
+										"@type": "Offer",
+										"priceCurrency": "RUB",
+										"price": "{{site.data.price[1][model_name]}}",
+										"priceValidUntil": "2020-11-05",
+										"availability": "http://schema.org/InStock",
+										"seller": {
+										  "@type": "Organization",
+										  "name": "copperi"
+										}
+									  }
+									}
+									</script>
+									<h2>{{ page.model-title }}</h2>
+								</header>
+								<p>{{ page.model-desc }}</p>
+								{% if page.features %}
+								<ul>
+								{% for feature in page.features %}
+									<li>{{feature}}</li>
+								{% endfor %}
+								</ul>
+								{% endif %}
+								<hr />
+								<footer>
+									<ul class="actions align-center">
+										<li><a id="btn-order" href="#" class="button alt big modal-open" data-modal="modal-order">Заказать</a></li>
+									</ul>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</section>
+				<hr />
+				<section class="container">
+					<header>
+						<h2>В деталях:</h2>
+					</header>
+				</section>
+				<section class="container mobile-full">
+					<div class="row uniform 50%">
+						{% for img in img_array %}
+							{% if forloop.index == 1 %}
+								{% continue %}
+							{% endif %}
+							<div class="6u 12u(medium)">
+								<img class="image fit" src="{{img}}" alt="Дизайнерский радиатор отопления copperi {{page.model-title}}-{{forloop.index}}"/>
+							</div>
+						{% endfor %}
+					</div>
+				</section>
+				<hr />
+				<!-- Price-list -->
+				{% if site.data.price[1][model_name] %}
+				<section class="container">
+					<div class="row uniform 50%">
+						<div class="6u 12u$(medium)">
+							<header>
+								<h2>Размеры и цены:</h2>
+							</header>
+							<div class="table-wrapper">
+								<table>
+									{% for model in site.data.size %}
+										{% if page.vertical %}
+										{% assign row = forloop.index |minus: 1 %}
+										{% if site.data.price[row][model_name] == nil %}
+											{% break %}
+										{% endif %}
+										<tr>
+											{% if model.size-v == nil %}
+												{% break %}
+											{% endif %}
+											{% assign row = forloop.index |minus: 1 %}
+											{% if site.data.price[row][model_name] == nil %}
+												{% break %}
+											{% endif %}
+											<td>{{model.size-v}} мм</td>
+											<td>{{model.power-v}} Вт</td>
+											
+											<td>{{site.data.price[row][model_name]}} &#8381;</td>
+										</tr>
+										{% else %}
+										{% assign row = forloop.index |minus: 1 %}
+										{% if site.data.price[row][model_name] == nil %}
+											{% break %}
+										{% endif %}
+										<tr>
+											<td>{{model.size}} мм</td>
+											<td>{{model.power}} Вт</td>
+											
+											<td>{{site.data.price[row][model_name]}} &#8381;</td>
+										</tr>
+										{% endif %}
+									{% endfor %}
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+				{% endif %}
+				{% if page.related %}
+				<hr />
+				<section class="container">
+					<header>
+						<h2>Похожие модели:</h2>
+					</header>
+					<div class="row uniform 25%">
+						{% for rel-product in page.related %}
+							{% for product in site.catalog %}
+								{% if product.url contains rel-product %}
+								<div class="4u 12u(small)">
+									<a class="feature" href="{{product.url}}">
+										<img src="/images/{{product.path | remove: "_" | remove: ".md"}}-small.jpg" alt="Дизайнерский радиатор отопления copperi {{product.model-title}}"/>
+										<h3>{{product.model-title}}</h3>
+									</a>
+								</div>	
 								{% endif %}
 							{% endfor %}
-							{% if img_array.size > 0 %}
-							
-							<div class="slick-product">
-								{% for img in img_array %}
-								<div>
-									<div class="banner b-product">
-										<img src="{{ img }}" alt="{{page.product-title}}-{{forloop.index}}">
-									</div>
-								</div>
-								{% endfor %}
-							</div>
-							{% endif %}
-						</div>
-						<header class="product">
-							{% assign rating_array = "4.7,4.8,4.9" | split:"," %}
-							{% assign count_array = "12,18,6,8,11,16" | split:"," %}
-							<script type="application/ld+json">
-							{
-							  "@context": "http://schema.org/",
-							  "@type": "Product",
-							  "name": "{{page.product-title}}",
-							  "image": "http://copperi.ru/images{{page.url}}-1.jpg",
-							  "description": "{{page.product-desc}}",
-							  "aggregateRating": {
-								"@type": "AggregateRating",
-								"ratingValue": "{{rating_array | sample}}",
-								"reviewCount": "{{count_array | sample}}"
-							  },
-							  "offers": {
-								"@type": "Offer",
-								"priceCurrency": "RUB",
-								"price": "{{site.data[page.product-type][0].price | remove: ","}}",
-								"priceValidUntil": "2020-11-05",
-								"availability": "http://schema.org/InStock",
-								"seller": {
-								  "@type": "Organization",
-								  "name": "COPPERI"
-								}
-							  }
-							}
-							</script>
-							<h2>{{ page.product-name }}</h2>
-							<div class="var_attr">
-								{% for model in site.data[page.product-type] %}
-								<p class="s{{forloop.index}} hide">{{model.price}}</p>
-								{% endfor %}
-							</div>
-							<button id="btn-order" class="button modal-open" data-modal="modal-order">Заказать</button>
-						</header>							
-					</section>
-					<div class="hero-block container 75%">
-						<div class="4u -4u 6u(medium) -3u(medium) 10u(xsmall) -1u(xsmall)">
-						<h5>Выберите размер</h5>
-						<div class="select-wrapper">
-							<select id="pa_size" name="attribute_pa_size" class="size_select" data-target=".var_attr">
-								{% for model in site.data[page.product-type] %}
-								<option value="{{model.size}}" {% if forloop.index==1 %}selected="selected"{% endif %} data-show=".s{{forloop.index}}">{{model.size}}</option>
-								{% endfor %}
-							</select>
-						</div>
-						</div>
+						{% endfor %}
 					</div>
-					
-					<div class="hero-block container 50%">
-						<h1>{{ page.product-title }}</h1>
-						<p>{{ page.product-desc }}</p>
-					</div>
-					
-					<div class="hero-block container 75%">
-						<div class="row">
-							{% assign first-model-1 = site.data[page.product-type] | first%}
-							{% assign last-model-1 = site.data[page.product-type] | last%}
-							{% assign model_array = page.product-model | split: '-' %}
-							{% assign design-number = model_array | last %}
-							<ul class="attr">
-								<li class="var_attr">Артикул: {% for model in site.data[page.product-type] %}<span class="s{{forloop.index}} hide">{{model.model-no}}-{{design-number}}</span>{% endfor %}</li>
-								<li class="var_attr">Размер: {% for model in site.data[page.product-type] %}<span class="s{{forloop.index}} hide">{{model.size}}</span>{% endfor %}</li>
-								<li class="var_attr">Мощность: {% for model in site.data[page.product-type] %}<span class="s{{forloop.index}} hide">{{model.wattage}} ({{first-model-1.wattage}}-{{last-model-1.wattage}}) Вт</span>{% endfor %}</li>
-								<li>Подключение: <span>{{ page.product-connection }}</span></li>
-								<li>Цвет: <span>{{ page.product-color }}</span></li>
-							</ul>
-						</div>
-					</div>
-					
-					<div class="hero-block container 50%">
-						<h4>Особенности модели:</h4>
-						<ul class="alt">
-							{% for feature in page.product-features %}
-							<li>{{ feature }}</li>
-							{% endfor %}
-						</ul>
-						
-					</div>
-					{% if page.related %}
-					<section id="frontpage-grid">
-						<header>
-							<h2>Вам также может понравиться</h2>
-						</header>
-						<div class="row 0%">
-							{% for rel-product in page.related %}
-								{% for product in site.catalog %}
-									{% if product.url contains rel-product %}
-										<div class="3u 4u(large) 6u(small)">
-											<a href="{{ product.url }}" class="copperi-link">
-												<div class="inner-wrapper product">	
-													<img class="image fit pop" src="/images/catalog/{{product.product-model}}-small.jpg" alt="{{product.product-title}}">
-													<h3>{{ product.product-name }}</h3>
-													{% assign first-model = site.data[product.product-type] | first%}
-													<p>{{ first-model.price }}</p>
-												</div>	
-											</a>
-										</div>
-									{% endif %}
-								{% endfor %}
-							{% endfor %}
-							
-							
-						</div>
-						
-					</section>
-					{% assign url_list = page.url | split: '/' %}
-					{% assign prod_name = url_list | last %}
-					{% assign back_url = page.url | remove: prod_name %}
-					<div class="view-more">
-						<a href="{{back_url}}">Смотреть всю коллекцию</a>						
-					</div>
-					{% endif %}
-					{% include pre-footer.html %}
-				</article>
-			</div>
-		<!-- CTA -->
-		{% include cta.html %}	
-		<!-- Footer -->
-		{% include footer.html %}	
-		<!-- Scripts -->
-		{% include scripts.html %}	
+				</section>
+				{% endif %}
+				<footer class="container align-center">
+					<ul class="actions">
+						<li><a class="button big alt" href="/catalog/">Весь каталог</a></li>
+					</ul>
+				</footer>
+			</article>
+			<!-- Footer -->
+			{% include footer.html %}	
+			<!-- Scripts -->
+			{% include scripts.html %}	
 		</div>
 		<!-- The Modal -->
 		<div id="modal-order" class="modal">
@@ -166,13 +190,13 @@
 			<div class="modal-content special">
 				<span id="modal-close-order" class="modal-close" data-close="modal-order"></span>
 				<form action="#" class="ajax-form">
-					<h3>Заказ</h3>
+					<h3 class="align-center">ЗАКАЗ</h3>
 					<input type="text" class="name" name="name" placeholder="Ваше имя*" required>
 					<input type="tel" class="phone" name="phone" placeholder="Номер телефона*" required>
 					<input type="email" class="email" name="email" placeholder="E-mail*" required>
-					<input style="display:none" type="text" class="product" name="product" id="product-order" value="">
-					<ul class="actions">
-						<li><input type="submit" class="submit button fit" value="Отправить"></li>
+					<textarea rows="4" name="message" class="message" placeholder="Комментарий*" required></textarea>
+					<ul class="actions align-center">
+						<li><input type="submit" class="alt big fit" style="border:0" value="Отправить"></li>
 					</ul>
 				</form>
 				<div class="form-succes" style="display:none;">

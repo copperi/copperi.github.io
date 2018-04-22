@@ -1,33 +1,34 @@
 <!DOCTYPE HTML>
 
-<html>
+<html lang="ru">
 	<head>
 		{% include head.html %}
 		{% seo %}
 	</head>
-	<body id="top" class="index is-loading">
+	<body class="index is-loading">
 		<div id="page-wrapper">
-		<!-- Header -->
-		{% include header.html %}	
-		<!-- Nav -->
-		{% include nav.html %}	
+			<!-- Header -->
+			{% include header.html %}	
+			<!-- Nav -->
+			{% include nav.html %}	
 
-		<!-- Banner -->
-		{% include banner-big.html %}	
-		
-		<!-- Main -->
-			<div id="main">
-				<article  class="special">
-					{{ content }}
-					{% include pre-footer.html %}
-				</article>
+			<!-- Banner -->
+			<div class="banner-wrapper">
+				<section id="banner" class="banner container">
+					<h1>Дизайнерские радиаторы отопления</h1>
+					<p>В Москве. На заказ за 21 день. И цены тоже есть.</p>
+					<a href="#start" class="arrow scrolly"><img src="images/arrow.svg" /></a>
+				</section>
 			</div>
-		<!-- CTA -->
-		{% include cta.html %}	
-		<!-- Footer -->
-		{% include footer.html %}	
-		<!-- Scripts -->
-		{% include scripts.html %}	
+			
+			<!-- Main -->
+			{{ content }}
+
+
+			<!-- Footer -->
+			{% include footer.html %}	
+			<!-- Scripts -->
+			{% include scripts.html %}	
 		</div>
 	</body>
 </html>
