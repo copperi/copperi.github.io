@@ -11,12 +11,14 @@ permalink: sitemap.xml
 
 {% for web-page in site.pages %}
 {% unless web-page.url contains "xml"%}
+{% unless web-page.url contains "css"%}
 <url>
   <loc>https://copperi.ru{{web-page.url}}</loc>
   <lastmod>2018-04-20T07:25:37+00:00</lastmod>
   <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
+{% endunless %}
 {% endunless %}
 {% endfor %}
 {% for web-page in site.catalog %}
