@@ -1,0 +1,104 @@
+.banner-wrapper-landing {
+	background-attachment: fixed;
+	background-color: #fff;
+	background-image: url("../../images/landing/medniy-radiator.jpg");
+	background-position: center center;
+	background-size: cover;	
+}
+
+.slide {
+	height:100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+	.slide-right {
+		justify-content: flex-end;
+	}
+	
+	.slide img {
+		max-height: 100%;
+		max-width: 65%;
+		align-self: center;
+		object-fit: contain;
+		min-height:90%;
+	}
+	
+	.slide ul {
+		line-height: 1.5em;
+	}
+	
+	@media screen and (max-width: 980px) {
+		.slide {
+			flex-direction: column;
+			height: auto;
+		}
+		
+		.slide-right {
+			flex-direction: column-reverse;
+		}
+		
+		.slide img {
+			height: auto;
+			max-width: 100%;
+			width: 100%;
+			align-self: flex-start;
+		}
+	}
+	
+.slide-inner {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+	padding: 0 4em;
+	font-size: 125%;
+}
+	
+	@media screen and (max-width: 1280px) {
+		.slide-inner {
+			padding: 0 2em;
+			font-size: 100%;
+		}
+	}
+	
+	@media screen and (max-width: 480px) {
+		.slide-inner {
+			padding: 0 1em;
+		}
+	}
+	
+section.major {
+	font-size: 125%;
+}
+	
+	@media screen and (max-width: 1280px) {
+		section.major {
+			font-size: 100%;
+		}
+	}
+	
+.banner span {
+	background: #fff;
+	box-shadow: 0.25em 0.1em 0 #fff, -0.25em 0.1em 0 #fff, 0.25em -0.1em 0em 0 #fff, -0.25em -0.1em 0em 0 #fff;
+	box-decoration-break: clone;
+}
+
+.banner h1 {
+	line-height: 1.1em;
+}
+
+
+@media screen and (max-width: 980px) {
+	.banner-wrapper-landing {
+		background-position: -200px center;
+	}
+}
+
+header p {
+	color: #666;
+}

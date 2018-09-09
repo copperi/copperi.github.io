@@ -7,7 +7,6 @@ redirect_from:
 - /catalog/antiq/antiq-design-1518
 - /catalog/antiq/antiq-design-1519
 - /catalog/antiq/antiq-design-1520
-- /catalog/antiq/
 
 header-color: "#fceae3"
 
