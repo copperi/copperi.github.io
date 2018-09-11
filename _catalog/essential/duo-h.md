@@ -3,9 +3,6 @@ title: Дизайнерский радиатор отопления copperi Duo.
 description: Купить дизайнерский радиатор отопления copperi Duo в Москве. Цена и размеры.
 layout: product
 permalink: /catalog/:name
-redirect_from:
-- /catalog/duo/duo-design-1501
-- /catalog/duo/
 
 header-color: "#fceae3"
 
