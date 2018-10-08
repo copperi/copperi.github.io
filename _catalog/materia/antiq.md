@@ -3,10 +3,6 @@ title: Медный дизайн радитор copperi Antiq. Цены и ра�
 description: Купить медный дизайн радиатор copperi Antiq в Москве по ценам производителя.
 layout: product
 permalink: /catalog/:name
-redirect_from:
-- /catalog/antiq/antiq-design-1518
-- /catalog/antiq/antiq-design-1519
-- /catalog/antiq/antiq-design-1520
 
 header-color: "#fceae3"
 
