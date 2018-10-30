@@ -1,6 +1,6 @@
 ---
-title: Дизайн-радитор отопления copperi Random. Цены и размеры.
-description: Заказать дизайн-радитор отопления copperi Random в Москве.
+title: Дизайн-радиатор отопления copperi Random. Цены и размеры.
+description: Заказать дизайн-радиатор отопления copperi Random в Москве.
 layout: product
 permalink: /catalog/:name
 

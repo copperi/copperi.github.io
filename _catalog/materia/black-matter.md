@@ -1,5 +1,5 @@
 ---
-title: Медный дизайн радитор copperi Black Matter. Цены и размеры.
+title: Медный дизайн радиатор copperi Black Matter. Цены и размеры.
 description: Купить медный дизайн радиатор copperi Black Matter в Москве по ценам производителя.
 layout: product
 permalink: /catalog/:name

@@ -1,5 +1,5 @@
 ---
-title: Медный дизайн радитор copperi Antiq Br. Цены и размеры.
+title: Медный дизайн радиатор copperi Antiq Br. Цены и размеры.
 description: Купить медный дизайн радиатор copperi Antiq Br в Москве по ценам производителя.
 layout: product
 permalink: /catalog/:name

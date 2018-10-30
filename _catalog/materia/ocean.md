@@ -1,5 +1,5 @@
 ---
-title: Медный дизайн радитор copperi Ocean. Цены и размеры.
+title: Медный дизайн радиатор copperi Ocean. Цены и размеры.
 description: Купить медный дизайн радиатор copperi Ocean в Москве по ценам производителя.
 layout: product
 permalink: /catalog/:name

@@ -1,6 +1,6 @@
 ---
-title: Вертикальный дизайнерский радитор copperi Anisotropia V. Цены и размеры.
-description: Купить вертикальный дизайнерский радитор copperi Anisotropia V в Москве по цене производителя.
+title: Вертикальный дизайнерский радиатор copperi Anisotropia V. Цены и размеры.
+description: Купить вертикальный дизайнерский радиатор copperi Anisotropia V в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
 
