@@ -3,7 +3,6 @@ title: Вертикальный медный радиатор copperi Plain V. �
 description: Купить вертикальный медный радиатор отопления copperi Plain V в Москве. Цена и размеры.
 layout: product
 permalink: /catalog/:name
-redirect_from: /catalog/plain/plain-v-design-1411
 
 header-color: "#fce3e3"
 

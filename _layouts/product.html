@@ -31,7 +31,7 @@
 					
 					<div class="row">
 						<div class="6u 12u(medium)">
-							<img class="image fit" src="{{ img_array[0] }}" alt="Дизайнерский радиатор отопления copperi {{page.model-title}}"/>
+							<img class="image fit" src="{{ img_array[0] }}" alt="Дизайнерский {%if page.towel%}медный полотенцесушитель{%else%}радиатор отопления{%endif%} copperi {{page.model-title}}"/>
 						</div>
 						<div class="6u 12u(medium)">
 							<div class="hero-container container">
@@ -96,7 +96,7 @@
 								{% continue %}
 							{% endif %}
 							<div class="6u 12u(medium)">
-								<img class="image fit" src="{{img}}" alt="Дизайнерский радиатор отопления copperi {{page.model-title}}-{{forloop.index}}"/>
+								<img class="image fit" src="{{img}}" alt="Дизайнерский {%if page.towel%}медный полотенцесушитель{%else%}радиатор отопления{%endif%} copperi {{page.model-title}}-{{forloop.index}}"/>
 							</div>
 						{% endfor %}
 					</div>
@@ -149,6 +149,19 @@
 						</div>
 					</div>
 				</section>
+				{% elsif page.towel %}
+				<section class="container">
+					<div class="row uniform 50%">
+						<div class="6u 12u$(medium)">
+							<header>
+								<h2>Размеры и цены:</h2>
+							</header>
+							<div class="table-wrapper">
+								{{ content }}
+							</div>
+						</div>
+					</div>
+				</section>
 				{% endif %}
 				{% if page.related %}
 				<hr />
@@ -162,7 +175,7 @@
 								{% if product.url contains rel-product %}
 								<div class="4u 12u(small)">
 									<a class="feature" href="{{product.url}}">
-										<img src="/images/{{product.path | remove: "_" | remove: ".md"}}-small.jpg" alt="Дизайнерский радиатор отопления copperi {{product.model-title}}"/>
+										<img src="/images/{{product.path | remove: "_" | remove: ".md"}}-small.jpg" alt="Дизайнерский {%if product.towel%}медный полотенцесушитель{%else%}радиатор отопления{%endif%} copperi {{product.model-title}}"/>
 										<h3>{{product.model-title}}</h3>
 									</a>
 								</div>	

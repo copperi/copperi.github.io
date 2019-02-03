@@ -3,9 +3,7 @@ title: Дизайнерский радиатор отопления copperi Fram
 description: Купить дизайнерский радиатор отопления copperi Frame в Москве. Цена и фото.
 layout: product
 permalink: /catalog/:name
-redirect_from:
-- /catalog/uniq/uniq-design-1601
-- /catalog/uniq/
+
 
 header-color: "#e5e5e5"
 

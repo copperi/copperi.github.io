@@ -4,5 +4,5 @@ coll-title: Materia
 coll-desc: "Естественная красота натуральных материалов"
 
 name: "materia"
-weight: 2
+weight: 3
 ---

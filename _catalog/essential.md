@@ -4,5 +4,5 @@ coll-title: Essential
 coll-desc: "Богатый простор для вашей фантазии"
 
 name: "essential"
-weight: 3
+weight: 4
 ---
