@@ -21,7 +21,7 @@ features:
 related:
 - caldera
 - escala
-- antiq
+- serpiente
 ---
 |500x1100 мм|302 Вт|68 670 ₽
 |500x1500 мм|447 Вт|83 650 ₽

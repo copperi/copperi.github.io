@@ -20,8 +20,8 @@ features:
 
 related:
 - el-camino
+- serpiente
 - escala
-- black-matter
 ---
 |700x1400 мм|489 Вт|108 990 ₽
 
