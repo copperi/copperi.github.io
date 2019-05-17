@@ -53,7 +53,7 @@
 									  "offers": {
 										"@type": "Offer",
 										"priceCurrency": "RUB",
-										"price": "{{site.data.price[1][model_name]|remove: ' '}}",
+										"price": "{%if site.data.price[1][model_name]%}{{site.data.price[1][model_name]|remove: ' '}}{%else%}50000{%endif%}",
 										"priceValidUntil": "2020-11-05",
 										"availability": "http://schema.org/InStock",
 										"seller": {
