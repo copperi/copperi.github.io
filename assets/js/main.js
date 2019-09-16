@@ -18,9 +18,12 @@
 	// Disable animations/transitions until everything's loaded.
 		$body.classList.add('is-loading');
 
-		window.addEventListener('load', function() {
+		document.addEventListener('DOMContentLoaded', function() {
 			$body.classList.remove('is-loading');
 		});
+		// window.addEventListener('load', function() {
+			// $body.classList.remove('is-loading');
+		// });
 
 	// Nav.
 		var	$nav = document.querySelector('#nav'),
