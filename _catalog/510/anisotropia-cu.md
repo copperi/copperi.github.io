@@ -1,6 +1,6 @@
 ---
-title: Дизайнерский радиатор отопления copperi Anisotropia Cu. Цены и размеры.
-description: Купить дизайнерский радиатор отопления copperi Anisotropia Cu в Москве по цене производителя.
+title: Дизайнерский радиатор из меди отопления copperi Anisotropia Cu. Цены и размеры.
+description: Купить дизайнерский из меди радиатор отопления copperi Anisotropia Cu в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
 
@@ -8,6 +8,7 @@ header-color: "#e3fcf9"
 
 model-title: "Anisotropia Cu"
 model-desc: "Направленная шлифовка разбивает отражения по-разному вдоль и поперёк линий. Можно выбрать наш рисунок или предложить свой."
+model-h1: "Дизайнерский радиатор из меди"
 
 weight: 10
 product: 1

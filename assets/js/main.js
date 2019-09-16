@@ -1,5 +1,3 @@
-/* skel-baseline v3.0.1 | (c) n33 | skel.io | MIT licensed */
-
 (function($) {
 
 	"use strict";
@@ -16,24 +14,6 @@
 		var	$body = document.querySelector('body'),
 			$header = $('#header'),
 			$banner = $('banner');
-
-	// Breakpoints.
-		skel.breakpoints({
-			xlarge:	'(max-width: 1680px)',
-			large:	'(max-width: 1280px)',
-			medium:	'(max-width: 980px)',
-			small:	'(max-width: 736px)',
-			xsmall:	'(max-width: 480px)'
-		});
-		
-	// Viewport	
-		skel.viewport({
-			breakpoints: {
-				small: {
-					scalable: false
-				}
-			}
-		});
 
 	// Disable animations/transitions until everything's loaded.
 		$body.classList.add('is-loading');
