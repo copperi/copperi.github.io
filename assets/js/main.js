@@ -171,7 +171,7 @@
 				var form = $(this);
 				$.ajax({
 					dataType: "jsonp",
-					url: "https://getsimpleform.com/messages/ajax?form_api_token=6155e5a53e9a2468cc242519b0569ead",
+					url: "https://script.google.com/macros/s/AKfycbzsBxQ_0rkFBSPUoWywnvdjUfyippHomxBDDRHV2hpTmWIrYNc/exec",
 					data: form.serialize()
 						}).done(function(data) {
 							$(".ajax-form").hide();
