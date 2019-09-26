@@ -3,7 +3,7 @@ title: Угловой дизайнерский медный полотенцес
 description: Купить угловой дизайнерский медный полотенцесушитель copperi angulo_recto в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
-image: /images/catalog/towel/angulo_recto-1.jpg
+image: /images/catalog/towel/angulo-recto-1.jpg
 
 header-color: "#fce5e3"
 
