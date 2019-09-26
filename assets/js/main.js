@@ -11,64 +11,56 @@
 			!function(){function t(t){this.el=t;for(var n=t.className.replace(/^\s+|\s+$/g,"").split(/\s+/),i=0;i<n.length;i++)e.call(this,n[i])}function n(t,n,i){Object.defineProperty?Object.defineProperty(t,n,{get:i}):t.__defineGetter__(n,i)}if(!("undefined"==typeof window.Element||"classList"in document.documentElement)){var i=Array.prototype,e=i.push,s=i.splice,o=i.join;t.prototype={add:function(t){this.contains(t)||(e.call(this,t),this.el.className=this.toString())},contains:function(t){return-1!=this.el.className.indexOf(t)},item:function(t){return this[t]||null},remove:function(t){if(this.contains(t)){for(var n=0;n<this.length&&this[n]!=t;n++);s.call(this,n,1),this.el.className=this.toString()}},toString:function(){return o.call(this," ")},toggle:function(t){return this.contains(t)?this.remove(t):this.add(t),this.contains(t)}},window.DOMTokenList=t,n(Element.prototype,"classList",function(){return new t(this)})}}();
 
 	// Vars.
-		var	$body = document.querySelector('body'),
+		var	body = document.querySelector('body'),
 			$header = $('#header'),
 			$banner = $('banner');
 
 	// Disable animations/transitions until everything's loaded.
-		$body.classList.add('is-loading');
+		body.classList.add('is-loading');
 
-		document.addEventListener('DOMContentLoaded', function() {
-			$body.classList.remove('is-loading');
-		});
-		// window.addEventListener('load', function() {
+		// document.addEventListener('DOMContentLoaded', function() {
 			// $body.classList.remove('is-loading');
 		// });
-
-	// Nav.
-		var	$nav = document.querySelector('#nav'),
-			$navToggle = document.querySelector('a[href="#nav"]'),
-			$navClose;
+		window.addEventListener('load', function() {
+			body.classList.remove('is-loading');
+		});
+		
+		// Nav.
+		var	nav = document.querySelector('#nav'),
+			navToggle = document.querySelector('a[href="#nav"]'),
+			navClose = document.querySelector('#nav .close');
 
 		
 		// Hide function
 			var hideNav=function(){
-				$nav.classList.remove('visible');
-				$body.classList.remove('menu-visible');
+				nav.classList.remove('visible');
+				body.classList.remove('menu-visible');
 			};
 			
 		// Event: Prevent clicks/taps inside the nav from bubbling.
-			addEventsListener($nav, 'click touchend', function(event) {
+			addEventsListener(nav, 'click touchend', function(event) {
 				event.stopPropagation();
 			});
 
 		// Event: Hide nav on body click/tap.
-			addEventsListener($body, 'click touchend', function(event) {
+			addEventsListener(body, 'click touchend', function(event) {
 				hideNav();
 			});
 			
 		// Toggle.
 
 			// Event: Toggle nav on click.
-				$navToggle.addEventListener('click', function(event) {
+				navToggle.addEventListener('click', function(event) {
 
 					event.preventDefault();
 					event.stopPropagation();
 
-					$nav.classList.toggle('visible');
-					$body.classList.toggle('menu-visible');
+					nav.classList.toggle('visible');
+					body.classList.toggle('menu-visible');
 
 				});
 
-		// Close.
-
-			// Create element.
-				$navClose = document.createElement('a');
-					$navClose.href = '#';
-					$navClose.className = 'close';
-					$navClose.tabIndex = 0;
-					$nav.appendChild($navClose);
-
+		
 			// Event: Hide on ESC.
 				window.addEventListener('keydown', function(event) {
 
@@ -78,7 +70,7 @@
 				});
 
 			// Event: Hide nav on click.
-				$navClose.addEventListener('click', function(event) {
+				navClose.addEventListener('click', function(event) {
 
 					event.preventDefault();
 					event.stopPropagation();
@@ -106,7 +98,7 @@
 
 			// Hide panel.
 				hideNav();
-
+				body.classList.add('trans');
 			// Redirect to href.
 				window.setTimeout(function() {
 
@@ -117,6 +109,27 @@
 
 				}, 500);
 
+		});
+		
+		//Transition animation
+		$('body').on('click', 'a', function(event) {
+			var $a = $(this),
+				href = $a.attr('href'),
+				target = $a.attr('target');
+				if (href.indexOf('#') != -1 || href.indexOf('tel') != -1 || href.indexOf('wa.me') != -1 || href.indexOf('mailto') != -1 || target == '_blank')
+					return;
+			// Cancel original event.
+				event.preventDefault();
+				event.stopPropagation();
+				body.classList.add('trans');
+				window.setTimeout(function() {
+
+					if (target == '_blank')
+						window.open(href);
+					else
+						window.location.href = href;
+
+				}, 250);
 		});
 		
 		// Scrolly links.
@@ -132,6 +145,8 @@
 			for (var i = 0; i < btn.length; i++) {
 				var thisBtn = btn[i];
 				thisBtn.addEventListener("click", function(event){
+					event.preventDefault();
+					event.stopPropagation();
 					var	modal = document.getElementById(this.getAttribute('data-modal'));
 					modal.classList.toggle('show');
 				});
@@ -142,6 +157,8 @@
 			for (var i = 0; i < btnClose.length; i++) {
 				var thisBtn = btnClose[i];
 				thisBtn.addEventListener("click", function(event){
+					event.preventDefault();
+					event.stopPropagation();
 					var	modal = document.getElementById(this.getAttribute('data-close'));
 					modal.classList.toggle('show');
 				});

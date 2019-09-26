@@ -2912,6 +2912,28 @@
 			z-index: -1;
 		}
 	}
+	
+	@keyframes overlay-show {
+		0% {
+			opacity: 0;
+			z-index: -1;
+		}
+
+		15% {
+			opacity: ;
+			z-index: 100000;
+		}
+
+		99% {
+			opacity: 1;
+			z-index: 100000;
+		}
+
+		100% {
+			opacity: 1;
+			z-index: 100000;
+		}
+	}
 
 	body {
 		text-decoration: none;
@@ -2970,6 +2992,12 @@
 			animation: none !important;
 			opacity: 1;
 			z-index: 100000;
+		}
+		
+		body.trans:after {
+			animation: overlay-show 0.25s ease-in forwards !important;
+			opacity: 1;
+			z-index: 1000000;
 		}
 
 	@media (-webkit-min-device-pixel-ratio: 2) {
