@@ -3,6 +3,7 @@ title: Полотенцесушитель из меди copperi bambu. Цены 
 description: Дизайнерский полотенцесушитель из меди copperi bambu в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
+image: /images/catalog/towel/bambu-1.jpg
 
 header-color: "#e3f0fc"
 
