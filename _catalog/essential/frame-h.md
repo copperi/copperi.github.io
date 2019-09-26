@@ -3,7 +3,7 @@ title: Дизайн радиатор отопления copperi Frame. Фото 
 description: Купить дизайнерский радиатор отопления copperi Frame в Москве. Цена и фото.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/essential/frame-h-1.jpg
 
 header-color: "#e5e5e5"
 

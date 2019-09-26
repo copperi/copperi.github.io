@@ -3,7 +3,7 @@ title: Медный полотенцесушитель copperi escala. Цены 
 description: Купить медный полотенцесушитель copperi escala в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/towel/escala-1.jpg
 header-color: "#fcece3"
 
 model-title: "escala"

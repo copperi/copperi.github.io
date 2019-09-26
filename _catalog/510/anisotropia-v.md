@@ -3,7 +3,7 @@ title: Вертикальный дизайнерский радиатор copper
 description: Купить вертикальный дизайнерский радиатор copperi Anisotropia V в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/510/anisotropia-v-1.jpg
 header-color: "#dfe2e5"
 
 model-title: "Anisotropia V"

@@ -3,7 +3,7 @@ title: Декоративный радиатор отопления copperi Duo.
 description: Декоративный радиатор отопления copperi Duo в Москве. Цена и размеры.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/essential/duo-h-1.jpg
 
 header-color: "#fceae3"
 

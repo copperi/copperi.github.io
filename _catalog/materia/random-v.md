@@ -3,7 +3,7 @@ title: Вертикальный дизайн-радиатор copperi Random V. 
 description: Заказать вертикальный дизайн-радиатор отопления copperi Random V в Москве.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/materia/random-v-1.jpg
 header-color: "#fcf6e3"
 
 model-title: "Random V"

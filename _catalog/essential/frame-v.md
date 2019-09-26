@@ -3,7 +3,7 @@ title: Вертикальный дизайнерский радиатор copper
 description: Заказать вертикальный дизайнерский радиатор отопления copperi Frame V в Москве. Цена и фото.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/essential/frame-v-1.jpg
 header-color: "#e5e5e5"
 
 model-title: "Frame V"

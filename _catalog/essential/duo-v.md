@@ -3,7 +3,7 @@ title: Вертикальный дизайнерский радиатор copper
 description: Купить вертикальный дизайнерский радиатор copperi Duo V в Москве. Цена и размеры.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/essential/duo-v-1.jpg
 header-color: "#fcf7e3"
 
 model-title: "Duo V"

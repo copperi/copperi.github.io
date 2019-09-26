@@ -3,7 +3,7 @@ title: Дизайнерский медный полотенцесушитель 
 description: Купить дизайнерский медный полотенцесушитель copperi rejilla в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/towel/rejilla-1.jpg
 header-color: "#fcece3"
 
 model-title: "rejilla"

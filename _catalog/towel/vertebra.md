@@ -3,7 +3,7 @@ title: Дизайнерский полотенцесушитель из медн
 description: Купить дизайнерский полотенцесушитель из медных труб copperi vertebra в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/towel/vertebra-1.jpg
 header-color: "#fcece3"
 
 model-title: "vertebra"

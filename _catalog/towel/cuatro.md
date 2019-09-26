@@ -3,6 +3,7 @@ title: Дизайнерский медный полотенцесушитель 
 description: Купить дизайнерский медный полотенцесушитель copperi cuatro в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
+image: /images/catalog/towel/cuatro-1.jpg
 
 header-color: "#fcece3"
 

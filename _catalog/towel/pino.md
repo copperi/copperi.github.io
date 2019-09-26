@@ -3,7 +3,7 @@ title: Дизайнерский медный полотенцесушитель 
 description: Купить дизайнерский медный полотенцесушитель copperi pino в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/towel/pino-1.jpg
 header-color: "#fce3f6"
 
 model-title: "pino"

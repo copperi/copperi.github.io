@@ -3,7 +3,7 @@ title: Дизайнерский полотенцесушитель из меди
 description: Дизайнерский полотенцесушитель из меди copperi estante в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/towel/estante-1.jpg
 header-color: "#fcf3e3"
 
 model-title: "estante"

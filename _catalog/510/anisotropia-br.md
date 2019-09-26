@@ -3,7 +3,7 @@ title: Дизайн радиатор из латуни copperi Anisotropia Br. �
 description: Дизайн радиатор из латуни copperi Anisotropia Br в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/510/anisotropia-br-1.jpg
 header-color: "#e3f6fc"
 
 model-title: "Anisotropia Br"

@@ -3,6 +3,7 @@ title: Дизайнерский медный полотенцесушитель 
 description: Купить дизайнерский медный полотенцесушитель copperi caldera в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
+image: /images/catalog/towel/caldera-1.jpg
 
 header-color: "#fce5e3"
 

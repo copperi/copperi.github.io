@@ -3,7 +3,7 @@ title: Дизайн-радиатор отопления copperi Random. Цены
 description: Заказать дизайн-радиатор отопления copperi Random в Москве.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/materia/random-h-1.jpg
 header-color: "#fcf6e3"
 
 model-title: "Random"

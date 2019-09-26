@@ -3,7 +3,7 @@ title: Дизайнерская медная батарея copperi Ocean. Це�
 description: Дизайнерская медная батарея copperi Ocean в Москве по ценам производителя.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/materia/ocean-1.jpg
 header-color: "#e3fcf0"
 
 model-title: "Ocean"

@@ -3,7 +3,7 @@ title: Дизайнерский радиатор из латуни copperi Antiq
 description: Дизайнерский радиатор из латуни copperi Antiq Br в Москве по ценам производителя.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/materia/brntiq-1.jpg
 header-color: "#e3fcf0"
 
 model-title: "Antiq Br"

@@ -3,7 +3,7 @@ title: Медный радиатор отопления copperi Plain. Цена 
 description: Купить медный радиатор отопления copperi Plain в Москве. Цена и размеры.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/essential/plain-h-1.jpg
 
 header-color: "#fce3e3"
 

@@ -3,7 +3,7 @@ title: Дизайнерский радиатор из меди copperi Antiq. Ц
 description: Купить медный дизайн радиатор copperi Antiq в Москве по ценам производителя.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/materia/antiq-1.jpg
 header-color: "#fceae3"
 
 model-title: "Antiq"

@@ -3,6 +3,7 @@ title: Медный водяной полотенцесушитель copperi el
 description: Купить медный водяной полотенцесушитель copperi el_camino в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
+image: /images/catalog/towel/el-camino-1.jpg
 
 header-color: "#e3fcf4"
 

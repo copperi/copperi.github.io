@@ -3,7 +3,7 @@ title: Дизайнерский медный полотенцесушитель 
 description: Купить дизайнерский медный полотенцесушитель copperi serpiente в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/towel/serpiente-1.jpg
 header-color: "#fcf3e3"
 
 model-title: "serpiente"

@@ -3,7 +3,7 @@ title: Горизонтальный дизайнерский медный пол
 description: Горизонтальный дизайнерский медный полотенцесушитель copperi tejiendo в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
-
+image: /images/catalog/towel/tejiendo-1.jpg
 header-color: "#fce5e3"
 
 model-title: "tejiendo"
