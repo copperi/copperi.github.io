@@ -97,7 +97,7 @@
 								{% continue %}
 							{% endif %}
 							<div class="6u 12u(medium)">
-								<img class="image fit" src="{{img}}" alt="{{page.model-h1}} copperi {{page.model-title}}-{{forloop.index}}"/>
+								<img class="image fit" src="{{img}}" loading="lazy" alt="{{page.model-h1}} copperi {{page.model-title}}-{{forloop.index}}"/>
 							</div>
 						{% endfor %}
 					</div>
@@ -195,7 +195,7 @@
 								{% if product.url contains rel-product %}
 								<div class="4u 12u(small)">
 									<a class="feature" href="{{product.url}}">
-										<img src="/images/{{product.path | remove: "_" | remove: ".md"}}-small.jpg" alt="{{product.model-h1}} copperi {{product.model-title}}"/>
+										<img src="/images/{{product.path | remove: "_" | remove: ".md"}}-small.jpg" loading="lazy" alt="{{product.model-h1}} copperi {{product.model-title}}"/>
 										<h3>{{product.model-title}}</h3>
 									</a>
 								</div>	
