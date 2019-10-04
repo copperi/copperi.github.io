@@ -87,8 +87,8 @@
 				href = $a.attr('href'),
 				target = $a.attr('target');
 
-			// if (!href || href == '#' || href == '' || href == '#' + id)
-				// return;
+			if (href.indexOf('#') != -1 || href.indexOf('tel') != -1 || href.indexOf('wa.me') != -1 || href.indexOf('mailto') != -1 || target == '_blank')
+					return;
 
 			// Cancel original event.
 				event.preventDefault();
