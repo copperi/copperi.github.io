@@ -23,7 +23,9 @@
 						{% if file.path contains model_name %}
 							{% if file.path contains "catalog" %}
 								{% unless file.path contains "small" %}
-									{% assign img_array = img_array | push: file.path %}
+									{% unless file.path contains "_" %}
+										{% assign img_array = img_array | push: file.path %}
+									{% endunless %}
 								{% endunless %}
 							{% endif %}
 						{% endif %}
@@ -32,7 +34,7 @@
 					<div class="row">
 						<div class="6u 12u(medium)">
 							<h1 style="position:absolute">"{{page.model-h1}} copperi {{page.model-title}}"</h1>
-							<img class="image fit" src="{{ img_array[0] }}" alt="{{page.model-h1}} copperi {{page.model-title}}" title="{{page.model-h1}} copperi {{page.model-title}}"/>
+							<img class="image fit" src="{{img_array[0]}}" srcset="{{img_array[0] | remove: '.jpg'}}_800w.jpg 800w, {{img_array[0] | remove: '.jpg'}}_1000w.jpg 1000w, {{img_array[0] | remove: '.jpg'}}_1200w.jpg 1200w" sizes="(max-width: 980px) 100vw, 50vw" alt="{{page.model-h1}} copperi {{page.model-title}}" title="{{page.model-h1}} copperi {{page.model-title}}"/>
 						</div>
 						<div class="6u 12u(medium)">
 							<div class="hero-container container">
@@ -97,7 +99,7 @@
 								{% continue %}
 							{% endif %}
 							<div class="6u 12u(medium)">
-								<img class="image fit" src="{{img}}" loading="lazy" alt="{{page.model-h1}} copperi {{page.model-title}}-фото{{forloop.index}}" title="{{page.model-h1}} copperi {{page.model-title}}-фото{{forloop.index}}"/>
+								<img class="image fit" src="{{img}}" loading="lazy" srcset="{{img | remove: '.jpg'}}_800w.jpg 800w, {{img | remove: '.jpg'}}_1000w.jpg 1000w, {{img | remove: '.jpg'}}_1200w.jpg 1200w" sizes="(max-width: 980px) 100vw, 800px" alt="{{page.model-h1}} copperi {{page.model-title}}-фото{{forloop.index}}" title="{{page.model-h1}} copperi {{page.model-title}}-фото{{forloop.index}}"/>
 							</div>
 						{% endfor %}
 					</div>
