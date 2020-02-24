@@ -4,7 +4,7 @@ description: Купить медный полотенцесушитель copper
 layout: product
 permalink: /catalog/:name
 image: /images/catalog/towel/escala-1.jpg
-header-color: "#fcece3"
+header-color: "#e3fcfc"
 
 model-title: "escala"
 model-desc: "Медный водяной полотенцесушитель copperi escala. Мы обязательно когда-нибудь придумаем крутое описание для этой модели, но сейчас совсем не до того. Посмотрите пока на картинки, всё и так понятно. А если не понятно, позвоните нам и мы всё расскажем. Или напишите, если не любите звонить."
