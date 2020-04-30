@@ -56,9 +56,8 @@ page-title: Контакты
 	</section>
 	<section class="container 75%">
 		<div id="map"></div>
-		<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDhVVXo6YEQbJaryZPqmx8g_SqMln8x8jY&extension=.js'></script>
 		<script> 
-			<!-- function initMap() { -->
+			function initMap() {
 			google.maps.event.addDomListener(window, 'load', init);
 			var map;
 			function init() {
@@ -140,7 +139,8 @@ page-title: Контакты
 				});
 		 }
 		}
-		<!-- } -->
+		}
 		</script>
+		<script async src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCRZ287SLI6Flr2HWzKJgAzo__-5ScvU4I&extension=.js&callback=initMap'></script>
 	</section>
 </article>
