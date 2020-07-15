@@ -188,7 +188,7 @@
 				$(".form-loading").fadeIn("200");
 				$.ajax({
 					dataType: "jsonp",
-					url: "https://script.google.com/macros/s/AKfycbzsBxQ_0rkFBSPUoWywnvdjUfyippHomxBDDRHV2hpTmWIrYNc/exec",
+					url: "https://europe-west2-toy-project-275819.cloudfunctions.net/nocors",
 					data: form.serialize()
 						}).done(function(data) {
 							$(".form-loading").hide();
