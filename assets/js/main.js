@@ -1,207 +1,157 @@
-(function($) {
+(function() {
 
-	"use strict";
+    "use strict"
 
-	// Methods/polyfills.
+    const body = document.querySelector('body');
+    const nav = document.querySelector('#nav');
+    const navToggle = document.querySelector('a[href="#nav"]');
+    const navClose = document.querySelector('#nav .close');
 
-		// addEventsListener
-			var addEventsListener=function(o,t,e){var n,i=t.split(" ");for(n in i)o.addEventListener(i[n],e)}
+    document.addEventListener('DOMContentLoaded', function() {
+        body.classList.remove('is-loading');
+    });
 
-		// classList | (c) @remy | github.com/remy/polyfills | rem.mit-license.org
-			!function(){function t(t){this.el=t;for(var n=t.className.replace(/^\s+|\s+$/g,"").split(/\s+/),i=0;i<n.length;i++)e.call(this,n[i])}function n(t,n,i){Object.defineProperty?Object.defineProperty(t,n,{get:i}):t.__defineGetter__(n,i)}if(!("undefined"==typeof window.Element||"classList"in document.documentElement)){var i=Array.prototype,e=i.push,s=i.splice,o=i.join;t.prototype={add:function(t){this.contains(t)||(e.call(this,t),this.el.className=this.toString())},contains:function(t){return-1!=this.el.className.indexOf(t)},item:function(t){return this[t]||null},remove:function(t){if(this.contains(t)){for(var n=0;n<this.length&&this[n]!=t;n++);s.call(this,n,1),this.el.className=this.toString()}},toString:function(){return o.call(this," ")},toggle:function(t){return this.contains(t)?this.remove(t):this.add(t),this.contains(t)}},window.DOMTokenList=t,n(Element.prototype,"classList",function(){return new t(this)})}}();
+    // Hide function
+    const hideNav=function(){
+        nav.classList.remove('visible');
+        body.classList.remove('menu-visible');
+    };
 
-	// Vars.
-		var	body = document.querySelector('body');
+    // Event: Prevent clicks/taps inside the nav from bubbling.
+    nav.addEventListener('click', function(event) {
+        event.stopPropagation();
+    });
 
-	// Disable animations/transitions until everything's loaded.
-		body.classList.add('is-loading');
+    // Event: Hide nav on body click/tap.
+    body.addEventListener('click', function(event) {
+        hideNav();
+    });
 
-		document.addEventListener('DOMContentLoaded', function() {
-			body.classList.remove('is-loading');
-		});
-		// window.addEventListener('load', function() {
-			// body.classList.remove('is-loading');
-		// });
-		
-		// Nav.
-		var	nav = document.querySelector('#nav'),
-			navToggle = document.querySelector('a[href="#nav"]'),
-			navClose = document.querySelector('#nav .close');
+    // Toggle nav on click.
+    navToggle.addEventListener('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        nav.classList.toggle('visible');
+        body.classList.toggle('menu-visible');
+    });
 
-		
-		// Hide function
-			var hideNav=function(){
-				nav.classList.remove('visible');
-				body.classList.remove('menu-visible');
-			};
-			
-		// Event: Prevent clicks/taps inside the nav from bubbling.
-			addEventsListener(nav, 'click touchend', function(event) {
-				event.stopPropagation();
-			});
+    // Hide nav on click.
+    navClose.addEventListener('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        hideNav();
+    });
 
-		// Event: Hide nav on body click/tap.
-			addEventsListener(body, 'click touchend', function(event) {
-				hideNav();
-			});
-			
-		// Toggle.
+    let transition = function(e) {
+        let href = this.getAttribute('href');
+        let target = this.getAttribute('target');
+        if (!href || href.indexOf('#') != -1 || href.indexOf('tel') != -1 || href.indexOf('wa.me') != -1 || href.indexOf('mailto') != -1 || target == '_blank')
+            return;
+        e.preventDefault();
+        e.stopPropagation();
+        hideNav();
+        body.classList.add('trans');
+        window.setTimeout(function() {
+            window.location.href = href;
+        }, 250);
+    }
+    
+    body.addEventListener('click', function(e) {
+        for (let target = e.target; target && target != this; target = target.parentNode) {
+            if (target.matches('a')) {
+                transition.call(target, e);
+                break;
+            }
+        }
+    }, false);
 
-			// Event: Toggle nav on click.
-				navToggle.addEventListener('click', function(event) {
+    nav.addEventListener('click', function(e) {
+        for (let target = e.target; target && target != this; target = target.parentNode) {
+            if (target.matches('a')) {
+                transition.call(target, e);
+                break;
+            }
+        }
+    }, false);
 
-					event.preventDefault();
-					event.stopPropagation();
+    //Modal
+    const button_modal_open = document.querySelector('.modal-open');
+    if (button_modal_open) {
+        button_modal_open.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            const modal = document.querySelector('#' + this.getAttribute('data-modal'));
+            modal.classList.toggle('show');
+        });
+    }
 
-					nav.classList.toggle('visible');
-					body.classList.toggle('menu-visible');
+    const button_modal_close = document.querySelector('#modal-close-order');
+    if (button_modal_close) {
+        button_modal_close.addEventListener('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            const modal = document.querySelector('#' + this.getAttribute('data-close'));
+            modal.classList.toggle('show');
+        });
+    }
 
-				});
+    const modal_order = document.querySelector('#modal-order');
+    if (modal_order) {
+        window.addEventListener('click', function(event) {
+            if (event.target == modal_order) {
+                modal_order.classList.toggle('show');
+            }
+        });
+    }
 
-		
-			// Event: Hide on ESC.
-				window.addEventListener('keydown', function(event) {
+    // Form submission
+    const form = document.querySelector('.ajax-form');
 
-					if (event.keyCode == 27)
-						hideNav();
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const url = "https://notstupidapp.ew.r.appspot.com/mailapi/copperi"
 
-				});
+        const form_loading = this.parentNode.querySelector('.form-loading');
+        const form_success = this.parentNode.querySelector('.form-success');
+        const form_error = this.parentNode.querySelector('.form-error');
 
-			// Event: Hide nav on click.
-				navClose.addEventListener('click', function(event) {
+        const payload = {
+            name: this.elements["name"].value,
+            phone: this.elements["phone"].value,
+            email: this.elements["email"].value,
+            message: this.elements["message"].value,
+            from_page: this.elements["page"].value
+        }
+        this.classList.add('hide');
+        form_loading.classList.remove('hide');
+        form_loading.classList.add('fade-in');
 
-					event.preventDefault();
-					event.stopPropagation();
+        let request = new XMLHttpRequest();
+        request.open('POST', url);
 
-					hideNav();
+        request.onload = function() {
+            if (this.status >= 200 && this.status < 400) {
+                console.log('Success');
+                console.log(this.responseText);
+                form_loading.classList.add('hide');
+                form_success.classList.remove('hide');
+                form_success.classList.add('fade-in');
+            } else {
+                // We reached our target server, but it returned an error
+                console.log('Server returned error');
+                form_loading.classList.add('hide');
+                form_error.classList.remove('hide');
+                form_error.classList.add('fade-in');
+            }
+        };
+        request.onerror = function() {
+            console.log('Connection error');
+            form_loading.classList.add('hide');
+            form_error.classList.remove('hide');
+            form_error.classList.add('fade-in');
+        };
+        request.send(JSON.stringify(payload));
 
-				});
-				
-		// Close on link click GRN
-		var
-			$this = $('#nav');
-			
-		$this.on('click', 'a', function(event) {
+    }, false);
 
-			var $a = $(this),
-				href = $a.attr('href'),
-				target = $a.attr('target');
-
-			if (href.indexOf('#') != -1 || href.indexOf('tel') != -1 || href.indexOf('wa.me') != -1 || href.indexOf('mailto') != -1 || target == '_blank')
-					return;
-
-			// Cancel original event.
-				event.preventDefault();
-				event.stopPropagation();
-
-			// Hide panel.
-				hideNav();
-				body.classList.add('trans');
-			// Redirect to href.
-				window.setTimeout(function() {
-
-					if (target == '_blank')
-						window.open(href);
-					else
-						window.location.href = href;
-
-				}, 500);
-
-		});
-		
-		//Transition animation
-		$('body').on('click', 'a', function(event) {
-			var $a = $(this),
-				href = $a.attr('href'),
-				target = $a.attr('target');
-				if (href.indexOf('#') != -1 || href.indexOf('tel') != -1 || href.indexOf('wa.me') != -1 || href.indexOf('mailto') != -1 || target == '_blank')
-					return;
-			// Cancel original event.
-				event.preventDefault();
-				event.stopPropagation();
-				body.classList.add('trans');
-				window.setTimeout(function() {
-
-					if (target == '_blank')
-						window.open(href);
-					else
-						window.location.href = href;
-
-				}, 250);
-		});
-		
-		// Scrolly links.
-			$('.scrolly').scrolly({
-				speed: 2000
-			});
-			
-		
-		//Modal
-		$(document).ready(function(){
-			
-			var btn = document.getElementsByClassName('modal-open');
-			for (var i = 0; i < btn.length; i++) {
-				var thisBtn = btn[i];
-				thisBtn.addEventListener("click", function(event){
-					event.preventDefault();
-					event.stopPropagation();
-					var	modal = document.getElementById(this.getAttribute('data-modal'));
-					modal.classList.toggle('show');
-				});
-								
-			};
-			
-			var btnClose = document.getElementsByClassName('modal-close');
-			for (var i = 0; i < btnClose.length; i++) {
-				var thisBtn = btnClose[i];
-				thisBtn.addEventListener("click", function(event){
-					event.preventDefault();
-					event.stopPropagation();
-					var	modal = document.getElementById(this.getAttribute('data-close'));
-					modal.classList.toggle('show');
-				});
-			};
-			
-		});
-		
-		$(document).ready(function(){
-						
-			window.addEventListener('click', function(event) {
-				var modal = document.getElementsByClassName('modal');
-				for (var i = 0; i < modal.length; i++) {
-					var thisModal = modal[i];
-					if (event.target == thisModal) {
-						thisModal.classList.remove('show');
-					}
-				}
-			});
-			
-		});	
-		
-		
-		//Form submission
-		$(document).ready(function(){
-			$('.ajax-form').submit(function(event) {
-				event.preventDefault();
-				var form = $(this);
-				$(".ajax-form").hide();
-				$(".form-loading").fadeIn("200");
-				$.ajax({
-					//dataType: "jsonp",
-					url: "https://europe-west2-toy-project-275819.cloudfunctions.net/nocors",
-					data: form.serialize()
-						}).done(function(data) {
-							$(".form-loading").hide();
-							$(".form-succes").fadeIn("200");
-							yaCounter21957292.reachGoal('order');
-							ga('send', 'event', 'form', 'order');
-							fbq('track', 'Lead');
-						}).fail(function(data) {
-							$(".form-loading").hide();
-							$(".form-error").fadeIn("200");
-						});
-			  });
-		});
-		
-
-})(jQuery);
+})();
