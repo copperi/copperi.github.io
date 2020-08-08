@@ -2424,10 +2424,6 @@ html {
 				transition: all 0.2s ease-in-out;
 			}
 				
-				#header > a.phone:hover img{
-					opacity: 0;
-				}
-				
 				#header > a.phone:hover::before {
 					opacity: 1;
 					width: 9em;
@@ -2437,10 +2433,6 @@ html {
 				@media screen and (max-width: 980px) {
 					#header > a.phone::before {
 						display:none;
-					}
-					
-					#header > a.phone:hover img{
-						opacity: 1;
 					}
 				}
 				
