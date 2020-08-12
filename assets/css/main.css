@@ -2424,10 +2424,6 @@ html {
 				transition: all 0.2s ease-in-out;
 			}
 				
-				#header > a.phone:hover img{
-					opacity: 0;
-				}
-				
 				#header > a.phone:hover::before {
 					opacity: 1;
 					width: 9em;
@@ -2437,10 +2433,6 @@ html {
 				@media screen and (max-width: 980px) {
 					#header > a.phone::before {
 						display:none;
-					}
-					
-					#header > a.phone:hover img{
-						opacity: 1;
 					}
 				}
 				
@@ -3124,6 +3116,26 @@ html {
 				opacity: 1;
 			}
 		
+	.feature .icons {
+		position: absolute;
+		top: 0.5em;
+		right: 0.5em;
+		margin: 0;
+		padding: 0 .25em;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 1em;
+		color: #fff;
+		transition: opacity .3s ease-in-out;
+	}
+
+		.feature .icons img {
+			height: 3em;
+			width: 3em;
+			padding: 0.25em;
+		}
 	
 
  /* Hero stuff */
