@@ -1,17 +1,17 @@
 ---
-title: Медный водяной полотенцесушитель copperi el_camino. Цены и размеры.
-description: Купить медный водяной полотенцесушитель copperi el_camino в Москве по цене производителя.
+title: Медный водяной полотенцесушитель copperi el_camino_rev_143b. Цены и размеры.
+description: Купить медный водяной полотенцесушитель copperi el_camino_rev_143b в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
-image: /images/catalog/towel/el-camino-1.jpg
+image: /images/catalog/towel/el-camin0-rev143b-1.jpg
 
-header-color: "#e3fcf4"
+header-color: "#fce3f6"
 
-model-title: "el_camino"
+model-title: "el_camino_rev_1.43b"
 model-desc: "Медный водяной полотенцесушитель. Мы обязательно когда-нибудь придумаем крутое описание для этой модели, но сейчас совсем не до того. Посмотрите пока на картинки, всё и так понятно. А если не понятно, позвоните нам и мы всё расскажем. Или напишите, если не любите звонить."
 model-h1: "Медный водяной полотенцесушитель"
 
-weight: 10
+weight: 50
 product: 1
 towel: 1
 
@@ -23,7 +23,8 @@ features:
 related:
 - caldera
 - escala
-- el-camin0-rev143b
+- el-camino
 ---
-|500x1100 мм|302 Вт|68 670 ₽
-|500x1500 мм|447 Вт|83 650 ₽
+|500x900 мм|269 Вт|60 590 ₽
+|500x1150 мм|357 Вт|69 620 ₽
+|500x1400 мм|448 Вт|78 650 ₽
