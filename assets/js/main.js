@@ -74,6 +74,14 @@
         }
     }, false);
 
+    // Remove transition class from body if page loaded from bfcache
+    window.addEventListener('pageshow', function(event) {
+        if (event.persisted === true) {
+            body.classList.remove('trans');
+        }
+    }, false);
+
+
     //Modal
     const button_modal_open = document.querySelector('.modal-open');
     if (button_modal_open) {
