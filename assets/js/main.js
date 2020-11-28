@@ -81,6 +81,33 @@
         }
     }, false);
 
+    // AR stuff
+    const ar_button = document.querySelector('#ar_button');
+    // check for Apple AR support
+    const a = document.createElement('a'), supportsAR = a.relList.supports('ar') ? true : false;
+    const user_agent = navigator.userAgent;
+    if (((supportsAR) || (/(android)/i.test(user_agent))) && (ar_button)) {
+        ar_button.classList.remove('hide');
+        ar_button.addEventListener('click', function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            const arsrc = this.getAttribute('data-arsrc');
+            if (supportsAR) {
+                // IPHONE
+                const anchor = document.createElement('a');
+                anchor.setAttribute('rel', 'ar');
+                anchor.appendChild(document.createElement('img'));
+                const usdzSrc = '/assets/models/' + arsrc + '.usdz#allowsContentScaling=0';
+                anchor.setAttribute('href', usdzSrc);
+                anchor.click();
+            } else {
+                const anchor = document.createElement('a');
+                const intent = 'intent://arvr.google.com/scene-viewer/1.0?file=https://copperi.ru/assets/models/' + arsrc + '.glb&mode=ar_preferred&title=copperi_' + arsrc + '&resizable=false#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;';
+                anchor.setAttribute('href', intent);
+                anchor.click();
+            }
+        }, false);
+    }
 
     //Modal
     const button_modal_open = document.querySelector('.modal-open');
