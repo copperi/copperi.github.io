@@ -14,7 +14,6 @@ model-h1: "Медный водяной полотенцесушитель"
 weight: 50
 product: 1
 towel: 1
-ar: 1
 
 features:
 - "Материал: медь"
