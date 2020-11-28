@@ -102,7 +102,8 @@
                 anchor.click();
             } else {
                 const anchor = document.createElement('a');
-                const intent = 'intent://arvr.google.com/scene-viewer/1.0?file=https://copperi.ru/assets/models/' + arsrc + '.glb&mode=ar_preferred&title=copperi_' + arsrc + '&resizable=false#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;';
+                const fallbackUrl = 'https://arvr.google.com/scene-viewer?file=https://copperi.ru/assets/models/' + arsrc + '.glb&title=copperi_' + arsrc;
+                const intent = 'intent://arvr.google.com/scene-viewer/1.0?file=https://copperi.ru/assets/models/' + arsrc + '.glb&mode=ar_preferred&title=copperi_' + arsrc + '&resizable=false#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url='+ fallbackUrl + ';end;';
                 anchor.setAttribute('href', intent);
                 anchor.click();
             }
