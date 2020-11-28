@@ -14,6 +14,7 @@ weight: 30
 product: 1
 towel: 1
 electro: 1
+ar: 1
 
 features:
 - "Материал: медь"
