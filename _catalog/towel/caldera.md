@@ -23,7 +23,7 @@ features:
 - "Покрытие: без покрытия, матовый или глянцевый лак"
 
 related:
-- el-camino
+- el-camin0-rev143b
 - serpiente
 - escala
 ---
