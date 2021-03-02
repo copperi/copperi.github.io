@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 @font-face {
 	font-family: 'Helvetica Neue Cyr Roman';
@@ -3151,7 +3151,11 @@ html {
 				width: 90%  !important;
 			}
 		}
-		
+	
+		.hero-container h2 {
+			margin-bottom: 0.5em;
+		}
+
 /* Modal popup */
 
 	/* The Modal (background) */
