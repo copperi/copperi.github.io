@@ -1,15 +1,15 @@
 ---
-title: Дизайнерский полотенцесушитель из медных труб copperi vertebra. Цены и размеры.
-description: Купить дизайнерский полотенцесушитель из медных труб copperi vertebra в Москве по цене производителя.
+title: Дизайнерский полотенцесушитель из медных труб copperi empatía. Цены и размеры.
+description: Купить дизайнерский полотенцесушитель из медных труб copperi empatía в Москве по цене производителя.
 layout: product
 permalink: /catalog/:name
-image: /images/catalog/towel/vertebra-1.jpg
-header-color: "#fcece3"
+image: /images/catalog/towel/empatia-1.jpg
+header-color: "#fce5e3"
 
-model-title: "vertebra"
+model-title: "empatía"
 model-desc: "Дизайнерский полотенцесушитель из медных труб. Мы обязательно когда-нибудь придумаем крутое описание для этой модели, но сейчас совсем не до того. Посмотрите пока на картинки, всё и так понятно. А если не понятно, позвоните нам и мы всё расскажем. Или напишите, если не любите звонить."
 model-h1: "Дизайнерский полотенцесушитель из медных труб"
-weight: 115
+weight: 70
 product: 1
 towel: 1
 
@@ -19,8 +19,8 @@ features:
 - "Покрытие: без покрытия, матовый или глянцевый лак"
 
 related:
-- el-camino
+- serpiente
 - caldera
-- escala
+- bambu
 ---
-|800x1900 мм|459 Вт|115 640 ₽
+|750x900 мм|605 Вт|141 540 ₽
