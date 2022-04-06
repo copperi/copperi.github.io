@@ -24,7 +24,7 @@ features:
 related:
 - el-camino
 - caldera
-- cierre
+- fuego
 ---
 ### Водяные:
 
