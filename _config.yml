@@ -10,6 +10,8 @@ lang: "ru_RU"
 collections:
   catalog:
     output: true
+  gallery:
+
 
 defaults:
   -

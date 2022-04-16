@@ -1,0 +1,46 @@
+---
+title: Галерея - copperi
+description: Медные полотенцесушители copperi. Галерея.
+
+permalink: /gallery
+layout: generic
+
+page-title: Галерея
+---
+<article>
+	{% assign rev_gallery = site.gallery | reverse %}
+	<section class="container">
+		<div id="gallery_grid">
+			{% for model in rev_gallery %}
+			{%unless model.draft%}
+				{% assign name = model.relative_path | split: "/" | last | remove: '.md' %}
+				{% assign even = forloop.index | modulo: 2 %}
+				<img class={% if even == 1 %}"item_big" {% else %}"item_small" {% endif %} width="100%" height="auto"
+					src="/images/gallery/{{name}}/{{name}}.1_1600w.jpg"
+					{%-if forloop.index > 1-%}loading="lazy"{%-endif-%}
+					srcset="/images/gallery/{{name}}/{{name}}.1_300w.jpg 300w, /images/gallery/{{name}}/{{name}}.1_600w.jpg 600w, /images/gallery/{{name}}/{{name}}.1_800w.jpg 800w, /images/gallery/{{name}}/{{name}}.1_1000w.jpg 1000w, /images/gallery/{{name}}/{{name}}.1_1200w.jpg 1200w, /images/gallery/{{name}}/{{name}}.1_1600w.jpg 1600w"
+					sizes="(max-width: 1280px) 100vw, 50vw"
+					alt="Медный полотенцесушитель copperi {{model.title}} фото 1"
+					title="Медный полотенцесушитель copperi {{model.title}} фото 1"/>
+				<img class={% if even == 1 %}"item_small" {% else %}"item_big" {% endif %} width="100%" height="auto"
+					src="/images/gallery/{{name}}/{{name}}.2_1600w.jpg"
+					{%-if forloop.index > 1-%}loading="lazy"{%-endif-%}
+					srcset="/images/gallery/{{name}}/{{name}}.2_300w.jpg 300w, /images/gallery/{{name}}/{{name}}.2_600w.jpg 600w, /images/gallery/{{name}}/{{name}}.2_800w.jpg 800w, /images/gallery/{{name}}/{{name}}.2_1000w.jpg 1000w, /images/gallery/{{name}}/{{name}}.2_1200w.jpg 1200w, /images/gallery/{{name}}/{{name}}.2_1600w.jpg 1600w"
+					sizes="(max-width: 1280px) 100vw, 50vw"
+					alt="Медный полотенцесушитель copperi {{model.title}} фото 2"
+					title="Медный полотенцесушитель copperi {{model.title}} фото 2"/>
+				<img class="item_small" width="100%" height="auto"
+					src="/images/gallery/{{name}}/{{name}}.3_1600w.jpg"
+					{%-if forloop.index > 1-%}loading="lazy"{%-endif-%}
+					srcset="/images/gallery/{{name}}/{{name}}.3_300w.jpg 300w, /images/gallery/{{name}}/{{name}}.3_600w.jpg 600w, /images/gallery/{{name}}/{{name}}.3_800w.jpg 800w, /images/gallery/{{name}}/{{name}}.3_1000w.jpg 1000w, /images/gallery/{{name}}/{{name}}.3_1200w.jpg 1200w, /images/gallery/{{name}}/{{name}}.3_1600w.jpg 1600w"
+					sizes="(max-width: 1280px) 100vw, 30vw"
+					alt="Медный полотенцесушитель copperi {{model.title}} фото 3"
+					title="Медный полотенцесушитель copperi {{model.title}} фото 3"/>
+				<div class="item_text">
+					<h2>{{model.title}}</h2>
+					<h4>{{model.text}}</h4>
+				</div>
+			{%endunless%}
+			{% endfor %}	
+	</section>
+</article>

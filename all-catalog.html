@@ -22,7 +22,7 @@ page-title: Каталог
 				{% assign model_name = url_list | last %}
 				<div class="4u 6u(medium) 12u(xsmall)">
 					<a class="feature" href="{{model.url}}">
-						<img src="/images/catalog/{{cat.name}}/{{model_name}}-small.jpg" loading="lazy" srcset="/images/catalog/{{cat.name}}/{{model_name}}-small_300w.jpg 300w, /images/catalog/{{cat.name}}/{{model_name}}-small_600w.jpg 600w, /images/catalog/{{cat.name}}/{{model_name}}-small_800w.jpg 800w, /images/catalog/{{cat.name}}/{{model_name}}-small_1000w.jpg 1000w, /images/catalog/{{cat.name}}/{{model_name}}-small_1200w.jpg 1200w, /images/catalog/{{cat.name}}/{{model_name}}-small.jpg 1600w" sizes="(max-width: 736px) 100vw, (max-width: 980px) 50vw, 27vw" alt="{{model.model-h1}} copperi {{model.model-title}}" title="{{model.model-h1}} copperi {{model.model-title}}"/>
+						<img width="100%" height="auto" src="/images/catalog/{{cat.name}}/{{model_name}}-small.jpg" {%-if forloop.index > 4-%}loading="lazy"{%-endif-%} srcset="/images/catalog/{{cat.name}}/{{model_name}}-small_300w.jpg 300w, /images/catalog/{{cat.name}}/{{model_name}}-small_600w.jpg 600w, /images/catalog/{{cat.name}}/{{model_name}}-small_800w.jpg 800w, /images/catalog/{{cat.name}}/{{model_name}}-small_1000w.jpg 1000w, /images/catalog/{{cat.name}}/{{model_name}}-small_1200w.jpg 1200w, /images/catalog/{{cat.name}}/{{model_name}}-small.jpg 1600w" sizes="(max-width: 736px) 100vw, (max-width: 980px) 50vw, 27vw" alt="{{model.model-h1}} copperi {{model.model-title}}" title="{{model.model-h1}} copperi {{model.model-title}}"/>
 						<h3>{{ model.model-title}}</h3>
 						{% if model.electro %}
 						<div class="icons">
