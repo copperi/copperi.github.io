@@ -1,4 +1,4 @@
-(function() {
+(function () {
 
     "use strict"
 
@@ -7,28 +7,28 @@
     const navToggle = document.querySelector('a[href="#nav"]');
     const navClose = document.querySelector('#nav .close');
 
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         body.classList.remove('is-loading');
     });
 
     // Hide function
-    const hideNav=function(){
+    const hideNav = function () {
         nav.classList.remove('visible');
         body.classList.remove('menu-visible');
     };
 
     // Event: Prevent clicks/taps inside the nav from bubbling.
-    nav.addEventListener('click', function(event) {
+    nav.addEventListener('click', function (event) {
         event.stopPropagation();
     });
 
     // Event: Hide nav on body click/tap.
-    body.addEventListener('click', function(event) {
+    body.addEventListener('click', function (event) {
         hideNav();
     });
 
     // Toggle nav on click.
-    navToggle.addEventListener('click', function(event) {
+    navToggle.addEventListener('click', function (event) {
         event.preventDefault();
         event.stopPropagation();
         nav.classList.toggle('visible');
@@ -36,13 +36,13 @@
     });
 
     // Hide nav on click.
-    navClose.addEventListener('click', function(event) {
+    navClose.addEventListener('click', function (event) {
         event.preventDefault();
         event.stopPropagation();
         hideNav();
     });
 
-    let transition = function(e) {
+    let transition = function (e) {
         let href = this.getAttribute('href');
         let target = this.getAttribute('target');
         if (!href || href.indexOf('#') != -1 || href.indexOf('tel') != -1 || href.indexOf('wa.me') != -1 || href.indexOf('mailto') != -1 || target == '_blank')
@@ -51,12 +51,12 @@
         e.stopPropagation();
         hideNav();
         body.classList.add('trans');
-        window.setTimeout(function() {
+        window.setTimeout(function () {
             window.location.href = href;
         }, 250);
     }
-    
-    body.addEventListener('click', function(e) {
+
+    body.addEventListener('click', function (e) {
         for (let target = e.target; target && target != this; target = target.parentNode) {
             if (target.matches('a')) {
                 transition.call(target, e);
@@ -65,7 +65,7 @@
         }
     }, false);
 
-    nav.addEventListener('click', function(e) {
+    nav.addEventListener('click', function (e) {
         for (let target = e.target; target && target != this; target = target.parentNode) {
             if (target.matches('a')) {
                 transition.call(target, e);
@@ -75,7 +75,7 @@
     }, false);
 
     // Remove transition class from body if page loaded from bfcache
-    window.addEventListener('pageshow', function(event) {
+    window.addEventListener('pageshow', function (event) {
         if (event.persisted === true) {
             body.classList.remove('trans');
         }
@@ -88,7 +88,7 @@
     const user_agent = navigator.userAgent;
     if (((supportsAR) || (/(android)/i.test(user_agent))) && (ar_button)) {
         ar_button.classList.remove('hide');
-        ar_button.addEventListener('click', function(e){
+        ar_button.addEventListener('click', function (e) {
             e.preventDefault();
             e.stopPropagation();
             const arsrc = this.getAttribute('data-arsrc');
@@ -103,7 +103,7 @@
             } else {
                 const anchor = document.createElement('a');
                 const fallbackUrl = 'https://arvr.google.com/scene-viewer?file=https%3A%2F%2Fcopperi.ru%2Fassets%2Fmodels%2F' + arsrc + '.glb&title=copperi_' + arsrc;
-                const intent = 'intent://arvr.google.com/scene-viewer/1.0?file=https://copperi.ru/assets/models/' + arsrc + '.glb&mode=ar_preferred&title=copperi_' + arsrc + '&resizable=false#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url='+ fallbackUrl + ';end;';
+                const intent = 'intent://arvr.google.com/scene-viewer/1.0?file=https://copperi.ru/assets/models/' + arsrc + '.glb&mode=ar_preferred&title=copperi_' + arsrc + '&resizable=false#Intent;scheme=https;package=com.google.ar.core;action=android.intent.action.VIEW;S.browser_fallback_url=' + fallbackUrl + ';end;';
                 anchor.setAttribute('href', intent);
                 anchor.click();
             }
@@ -113,7 +113,7 @@
     //Modal
     const button_modal_open = document.querySelector('.modal-open');
     if (button_modal_open) {
-        button_modal_open.addEventListener('click', function(event) {
+        button_modal_open.addEventListener('click', function (event) {
             event.preventDefault();
             event.stopPropagation();
             const modal = document.querySelector('#' + this.getAttribute('data-modal'));
@@ -123,7 +123,7 @@
 
     const button_modal_close = document.querySelector('#modal-close-order');
     if (button_modal_close) {
-        button_modal_close.addEventListener('click', function(event) {
+        button_modal_close.addEventListener('click', function (event) {
             event.preventDefault();
             event.stopPropagation();
             const modal = document.querySelector('#' + this.getAttribute('data-close'));
@@ -133,7 +133,7 @@
 
     const modal_order = document.querySelector('#modal-order');
     if (modal_order) {
-        window.addEventListener('click', function(event) {
+        window.addEventListener('click', function (event) {
             if (event.target == modal_order) {
                 modal_order.classList.toggle('show');
             }
@@ -144,9 +144,9 @@
     const form = document.querySelector('.ajax-form');
 
     if (form) {
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
-            const url = "https://notstupidapp.ew.r.appspot.com/mailapi/copperi"
+            const url = "https://worker-email.notstupid.workers.dev/"
 
             const form_loading = this.parentNode.querySelector('.form-loading');
             const form_success = this.parentNode.querySelector('.form-success');
@@ -166,7 +166,7 @@
             let request = new XMLHttpRequest();
             request.open('POST', url);
 
-            request.onload = function() {
+            request.onload = function () {
                 if (this.status >= 200 && this.status < 400) {
                     console.log('Success');
                     console.log(this.responseText);
@@ -181,7 +181,7 @@
                     form_error.classList.add('fade-in');
                 }
             };
-            request.onerror = function() {
+            request.onerror = function () {
                 console.log('Connection error');
                 form_loading.classList.add('hide');
                 form_error.classList.remove('hide');
