@@ -157,7 +157,7 @@
                 phone: this.elements["phone"].value,
                 email: this.elements["email"].value,
                 message: this.elements["message"].value,
-                from_page: this.elements["page"].value
+                page: this.elements["page"].value
             }
             this.classList.add('hide');
             form_loading.classList.remove('hide');
